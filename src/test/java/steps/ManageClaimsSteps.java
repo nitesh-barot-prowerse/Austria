@@ -52,17 +52,22 @@ public class ManageClaimsSteps {
 
     }
 
-    @Then("All data under Amount paybale column prefixed by £ sign")
-    public void all_data_under_amount_paybale_column_prefixed_by_£_sign() {
+    @Then("All data under Amount paybale column post fixed  by € sign")
+    public void all_data_under_amount_paybale_column_post_fixed_by_€_sign() {
         String amountPayable = claimPage.verifyAmountPayableColumn();
-        //System.out.println(yearlyArray);
-        String apArray[] = amountPayable.split(" ");
-        for (int i = 0; i < apArray.length - 1; i++) {
-            if (apArray[i].equals("£")) {
-                System.out.println("All Amount Under Amount Payable Column Prefixed By £");
-                break;
+        //System.out.println(amountPayable);
+        String[] split = amountPayable.split("[ \\.,]+");
+        //System.out.println(s);
+        for (int j = 3; j <= split.length; j = j + 3) {
+            if (split[j].equals("€")) {
+                System.out.println("Data Post Fixed by €");
+
+            } else {
+                Assert.fail();
             }
         }
+
+
 
     }
 
@@ -117,9 +122,9 @@ public class ManageClaimsSteps {
     public void appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details() {
         String treatmentStatus = claimPage.verifyTreatmentStatus();
 
-       if (treatmentStatus.contains("Pending")){
-           System.out.println("Treatment status appeared as per requirement");
-       }
+        if (treatmentStatus.contains("Pending")) {
+            System.out.println("Treatment status appeared as per requirement");
+        }
     }
 
 

@@ -25,7 +25,7 @@ public class QuotePage {
 
     private By messageOnAddQuotePage = By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
 
-    private By monthlyPremiumColumn= By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]");
+    private By monthlyPremiumColumn= By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[13]");
 
     private By microchipButton=By.xpath("//div[@class='form-group pull-right']/div/a[3]");
 
@@ -97,7 +97,7 @@ public class QuotePage {
             throw new RuntimeException(e);
         }
         WebDriverWait wait = new WebDriverWait(driver,10);
-        List<WebElement> yearlyPremiumColum = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[15]")));
+        List<WebElement> yearlyPremiumColum = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[13]")));
         String yPremium=" ";
         for (WebElement amountP : yearlyPremiumColum) {
             yPremium= yPremium +" "+ amountP.getText().toString();
@@ -107,7 +107,7 @@ public class QuotePage {
 
     public String verifyMonthlyPremiumColumn() {
         WebDriverWait mWait = new WebDriverWait(driver, 10);
-        List<WebElement> monthlyPremiumColumn = mWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]")));
+        List<WebElement> monthlyPremiumColumn = mWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[14]")));
         String yPremium=" ";
         for (WebElement amountP : monthlyPremiumColumn) {
             yPremium= yPremium +" "+ amountP.getText().toString();

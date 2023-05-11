@@ -63,56 +63,62 @@ public class QuotePageSteps {
 
     @Then("User will able to see add quote page with data")
     public void user_will_able_to_see_add_quote_page_with_data() {
-        String addQuoteMessage=quotePage.verifyAddQuotePage();
-        Assert.assertEquals(addQuoteMessage,"Add Quote");
+        String addQuoteMessage = quotePage.verifyAddQuotePage();
+        Assert.assertEquals(addQuoteMessage, "Add Quote");
 
     }
 
-    @Then("User will able to see  all data under total and monthly premium colum prefixed by £ sign")
-    public void user_will_able_to_see_all_data_under_total_and_monthly_premium_colum_prefixed_by_£_sign() {
-        String yearlyArray=quotePage.verifyTotalPremiumColumn();
-        //System.out.println(yearlyArray);
-        String newArray[] = yearlyArray.split(" ");
-        for (int i = 0; i < newArray.length - 1; i++) {
-            if (newArray[i].equals("£")) {
-                System.out.println("All Amount Under Yearly Premium Column Prefixed By £");
-                break;
+    @Then("User will able to see  all data under total and monthly premium colum post fixed by € sign")
+    public void user_will_able_to_see_all_data_under_total_and_monthly_premium_colum_post_fixed_by_€_sign() {
+        String yearlyArray = quotePage.verifyTotalPremiumColumn();
+        System.out.println(yearlyArray);
+        String[] split = yearlyArray.split("[ \\.,]+");
+        for (int j = 3; j <= split.length; j = j + 3) {
+            if (split[j].equals("€")) {
+                System.out.println(split[j]);
+                System.out.println("Data Post Fixed by €");
+
+            } else {
+                Assert.fail();
             }
         }
+        String monthlyArray = quotePage.verifyMonthlyPremiumColumn();
+        System.out.println(monthlyArray);
+        String[] month = yearlyArray.split("[ \\.,]+");
+        for (int j = 3; j <= month.length; j = j + 3) {
+            if (month[j].equals("€")) {
+                System.out.println(month[j]);
+                System.out.println("Data Post Fixed by €");
 
-        String monthlyArray=quotePage.verifyMonthlyPremiumColumn();
-        //System.out.println(monthlyArray);
-        String monthArray[] = monthlyArray.split(" ");
-        for (int i = 0; i < monthArray.length - 1; i++) {
-            if (monthArray[i].equals("£")) {
-                System.out.println("All Amount Under Monthly Premium Column Prefixed By £");
-                break;
+            } else {
+                Assert.fail();
             }
         }
 
     }
+
 
     @When("User clicks on upload microchip file button")
     public void user_clicks_on_upload_microchip_file_button() {
-        String Message=quotePage.clickOnMicrochipButton();
-        Assert.assertEquals(Message,"Microchip File Upload");
+        String Message = quotePage.clickOnMicrochipButton();
+        Assert.assertEquals(Message, "Microchip File Upload");
     }
 
     @Then("User will be able to see microchip file upload page with data")
     public void user_will_be_able_to_see_microchip_file_upload_page_with_data() {
-     String dataOfMicroPage=quotePage.verifyDataOnMicrochipPage();
-     System.out.println(dataOfMicroPage);
+        String dataOfMicroPage = quotePage.verifyDataOnMicrochipPage();
+        System.out.println(dataOfMicroPage);
     }
 
     @When("User clicks on add quote button")
     public void user_clicks_on_add_quote_button() {
-     quotePage.clickOnAddQuoteButton();
+        quotePage.clickOnAddQuoteButton();
     }
 
     @Then("On add quote page product dropdown will appear with desired list")
     public void on_add_quote_page_product_dropdown_will_appear_with_desired_list() {
-        String verifyS=quotePage.verifyProductList();
-        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover Horse ");
+        String verifyS = quotePage.verifyProductList();
+        Assert.assertEquals(verifyS, " Select Exotic Cat Dog Introductory Cover Horse ");
 
     }
 
@@ -126,6 +132,7 @@ public class QuotePageSteps {
     public void user_will_see_quote_information() {
 
     }
+
     @When("User selects appropriate option from quote status dropdown")
     public void user_selects_appropriate_option_from_quote_status_dropdown() {
         quotePage.SelectItemFromDropDown();

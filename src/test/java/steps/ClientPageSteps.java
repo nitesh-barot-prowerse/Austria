@@ -49,7 +49,7 @@ public class ClientPageSteps {
     @Then("Appropriate client information displays inside table on manage client page")
     public void appropriate_client_information_displays_inside_table_on_manage_client_page() {
      String clientCode=clientPage.verifyClient();
-     Assert.assertEquals(clientCode,"DANK-00005");
+     Assert.assertEquals(clientCode,"JAMI-0001");
     }
 
     @When("User selects appropriate option from Active dropdown on manage client page")

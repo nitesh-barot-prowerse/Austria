@@ -105,7 +105,7 @@ public class ManageClaimPage {
         List<WebElement> monthlyPremiumColumn = mWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]")));
         String yPremium = " ";
         for (WebElement amountP : monthlyPremiumColumn) {
-            yPremium = yPremium + " " + amountP.getText().toString();
+            yPremium = yPremium +" "+ amountP.getText().toString();
         }
         return yPremium;
 
