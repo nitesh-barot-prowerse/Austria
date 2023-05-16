@@ -1,4 +1,4 @@
-Feature: Verify Setting page hyperlinks
+Feature: Verify Setting Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel

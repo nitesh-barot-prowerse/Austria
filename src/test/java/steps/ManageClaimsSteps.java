@@ -19,7 +19,9 @@ public class ManageClaimsSteps {
     @Then("User will able see all data available on manage claim page")
     public void user_will_able_see_all_data_available_on_manage_claim_page() {
         String displayedData = claimPage.verifyClaimPageInformation();
-        System.out.println(displayedData);
+        if (displayedData.length()>0) {
+            System.out.println(displayedData);
+        }
     }
 
     @Then("All data under treatment and cliam first advised date column displays in dd-mm-yyyy format")

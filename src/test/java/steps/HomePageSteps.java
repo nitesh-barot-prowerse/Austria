@@ -21,7 +21,7 @@ public class HomePageSteps {
 
     }
 
-    @Then("User will able to see text {string} behind copyright message")
+   /* @Then("User will able to see text {string} behind copyright message")
     public void user_will_able_to_see_text_behind_copyright_message(String string) {
         String Msg = homePage.verifyMessage();
         if (Msg.contains(string)) {
@@ -30,5 +30,15 @@ public class HomePageSteps {
             Assert.fail();
         }
 
+    }*/
+
+    @Then("User will able to see text {string} inside log in form")
+    public void user_will_able_to_see_text_inside_log_in_form(String string) {
+        String Msg = homePage.verifyMessage();
+        if (Msg.contains(string)) {
+            System.out.println("Home page displayed with required text ");
+        } else {
+            Assert.fail();
+        }
     }
 }

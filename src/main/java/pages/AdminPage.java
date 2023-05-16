@@ -193,15 +193,165 @@ public class AdminPage {
     public void traversingThroughPages() {
         WebDriverWait cWait = new WebDriverWait(driver, 10);
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='ibox-content']/div/div/a")));
-        for (WebElement cLE : totalColumn) {
-            System.out.println(cLE.getText());
-            if (cLE.getText().equals("Insurer")) {
-                cLE.click();
-                System.out.println(driver.getCurrentUrl());
-                break;
-            }
+        String product = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[1]/a")).getText();
+        if (product.contains("Run Scheduler") || product.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[1]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+
         }
+        String Department = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[2]/a")).getText();
+        if (Department.contains("Run Scheduler") || Department.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[2]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String Staff = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[3]/a")).getText();
+        if (Staff.contains("Run Scheduler") || Staff.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[3]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String BankAccount = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[4]/a")).getText();
+        if (BankAccount.contains("Run Scheduler") || BankAccount.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[4]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String Insurer = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[6]/a")).getText();
+        if (Insurer.contains("Run Scheduler") || Insurer.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[6]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String Agent = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[7]/a")).getText();
+        if (Agent.contains("Run Scheduler") || Agent.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[7]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String Company = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[8]/a")).getText();
+        if (Company.contains("Run Scheduler") || Company.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[8]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String RatingVersion = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[9]/a")).getText();
+        if (RatingVersion.contains("Run Scheduler") || RatingVersion.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[9]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String RunScheduler = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[10]/a")).getText();
+        if (RunScheduler.contains("Run Scheduler") || RunScheduler.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[10]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+        String PromoCode = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[11]/a")).getText();
+        if (PromoCode.contains("Run Scheduler") || PromoCode.contains("Email Logs")) {
+            System.out.println("Do Nothing");
+
+
+        } else {
+            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[11]/a")).click();
+            System.out.println(driver.getCurrentUrl());
+            driver.findElement(adminIcon).click();
+        }
+
+
     }
+
+       /* try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[2]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[3]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[4]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[5]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[6]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[7]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[8]/a")).click();
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(adminIcon).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
+
 
     public void clickOnProductIcon() {
         driver.findElement(productIcon).click();

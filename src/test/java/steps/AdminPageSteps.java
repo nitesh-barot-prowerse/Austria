@@ -43,11 +43,9 @@ public class AdminPageSteps {
         adminPage.editData();
 
     }
-
-    @Then("Account page displays with icons and corresponding page displays by clicking on icon.")
-    public void account_page_displays_with_icons_and_corresponding_page_displays_by_clicking_on_icon() {
+    @Then("Admin page displays with icons and corresponding page displays by clicking on icon.")
+    public void admin_page_displays_with_icons_and_corresponding_page_displays_by_clicking_on_icon() {
         adminPage.traversingThroughPages();
-
     }
 
     @When("User clicks on product icon administration page")

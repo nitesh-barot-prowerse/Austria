@@ -11,7 +11,8 @@ public class HomePage {
         this.driver = driver;
     }
 
-    private By displayedText= By.xpath("//p[@class='copyright']/small");
+    //private By displayedText= By.xpath("//p[@class='copyright']/small");
+    private By displayedText= By.xpath("//header/h4");
 
     public String verifyUrl(){
         return driver.getCurrentUrl();

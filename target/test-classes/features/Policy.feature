@@ -1,4 +1,4 @@
-Feature: Check Manage Policy Page Data And Functionality
+Feature: Verify Policy Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel

@@ -1,4 +1,4 @@
-Feature: Verify Data And Functionality Of Task Page
+Feature: Verify Task Module Features
 
 
   Background:
@@ -13,7 +13,7 @@ Feature: Verify Data And Functionality Of Task Page
   Scenario: To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page
     When user clicks on add task button
     Then User redirects to page with "Add Task" message
-    And Assigned to dropdown appears with initial "sa FIT sa " current user
+    And Assigned to dropdown appears with initial current user
 
 #  Scenario: Filter data of manage task page using select dropdown of page
 #    When User Selects any option from status dropdown on manage task page

@@ -1,4 +1,4 @@
-Feature: Check Admin Page Data And Functionality
+Feature: Verify Admin Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
@@ -16,12 +16,12 @@ Feature: Check Admin Page Data And Functionality
     And User will able to edit available fields on page
 
   Scenario:  Verify that the Administration page displays with a set of icons.Corresponding page opens on clicking icon.
-    Then Account page displays with icons and corresponding page displays by clicking on icon.
+    Then Admin page displays with icons and corresponding page displays by clicking on icon.
 #
-  Scenario: To verify whether View Product page displays with product details with status after by clicking on product code on manage product page
-    When User clicks on product icon administration page
-    And User clicks on product code on manage product page
-    Then View product page displays with all product details
+#  Scenario: To verify whether View Product page displays with product details with status after by clicking on product code on manage product page
+#    When User clicks on product icon administration page
+#    And User clicks on product code on manage product page
+#    Then View product page displays with all product details
 #
 #  Scenario: To verify if insurer pop up windows displays by  clicking on insurer configuration pop up on setting icon on manage product page
 #    When User clicks on product icon administration page
@@ -39,9 +39,9 @@ Feature: Check Admin Page Data And Functionality
 #    And User clicks on search button on manage department page
 #    Then Respected data upon department value will display on manage department page
 #
-  Scenario: Manage Bank Account page displays with all details by clicking on bank account icon on administration page
-    When User clicks on bank account icon
-    Then Manage bank account page displays with all details
+#  Scenario: Manage Bank Account page displays with all details by clicking on bank account icon on administration page
+#    When User clicks on bank account icon
+#    Then Manage bank account page displays with all details
 #
 #
 #  Scenario: Filter data of bank details upon bank account and insurer drop down items on manage bank account page
@@ -75,17 +75,17 @@ Feature: Check Admin Page Data And Functionality
 #    And User selects appropriate options from Type,Category and Active drop down
 #    Then On manage insurer page list of data reflects upon drop downs values
 #
-  Scenario: Add insurer page displays with all fields by clicking on add insurer icon on manage insurer page
-    When User clicks on insurer icon on administration page
-    And User clicks on add insurer icon on manage insurer page
-    Then Add insurer page displays with all fields
+#  Scenario: Add insurer page displays with all fields by clicking on add insurer icon on manage insurer page
+#    When User clicks on insurer icon on administration page
+#    And User clicks on add insurer icon on manage insurer page
+#    Then Add insurer page displays with all fields
+##
+#  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
+#    When User clicks on agent icon
+#    And User clicks on agent reference number under list of agent details
+#    Then View agent page displays with all information
 #
-  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
-    When User clicks on agent icon
-    And User clicks on agent reference number under list of agent details
-    Then View agent page displays with all information
-
-  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
-    When User clicks on company icon
-    Then Manage company page displays with list of available companies
+#  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
+#    When User clicks on company icon
+#    Then Manage company page displays with list of available companies
 

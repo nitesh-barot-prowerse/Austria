@@ -29,11 +29,14 @@ public class ClientPageSteps {
 
     }
 
-    @Then("User will see client details")
-    public void user_will_see_client_details() {
+    @Then("Manage client page displays with list of clients")
+    public void manage_client_page_displays_with_list_of_clients() {
         String clientData = clientPage.fetchAndDisplayData();
-        System.out.println(clientData);
-
+        if (clientData.length() > 0) {
+            System.out.println(clientData);
+        } else {
+            Assert.fail();
+        }
     }
 
     @When("User enters code number inside search box on manage client page")

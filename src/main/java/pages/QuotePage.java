@@ -156,10 +156,10 @@ public class QuotePage {
         return verfiy;
     }
 
-    public void fetchDataOfQuoteInformation(){
+    public String fetchDataOfQuoteInformation(){
         WebDriverWait cWait = new WebDriverWait(driver,10);
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[2]/a")));
-
+        String displayMessage=" ";
         for (WebElement cEle : totalColumn) {
             System.out.println(cEle.getText());
 
@@ -172,10 +172,12 @@ public class QuotePage {
             ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs2.get(1));
             System.out.println(driver.getCurrentUrl());
+            displayMessage=displayMessage+driver.findElement(displayedMessage).getText();
             driver.close();
             driver.switchTo().window(tabs2.get(0));
 
         }
+        return displayMessage;
 
     }
 

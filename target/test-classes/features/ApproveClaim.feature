@@ -1,4 +1,4 @@
-Feature: Verify Available Data And Functionality On Approve Page
+Feature: V Verify Approve Claim  Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel

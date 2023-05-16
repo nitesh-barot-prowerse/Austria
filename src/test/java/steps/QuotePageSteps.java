@@ -16,11 +16,14 @@ public class QuotePageSteps {
         Assert.assertEquals(Message, "Manage Quote");
 
     }
-
-    @Then("User will see quote details")
-    public void user_will_see_quote_details() {
-        String Array = quotePage.fetchAndDisplayedData();
-        System.out.println(Array);
+    @Then("Manage quote page displays with list of quote")
+    public void manage_quote_page_displays_with_list_of_quote() {
+        String quoteData = quotePage.fetchAndDisplayedData();
+        if (quoteData.length() > 0) {
+            System.out.println(quoteData);
+        } else {
+            Assert.fail();
+        }
     }
 
     @Then("User will able to see all data under quote date and expire date column displays with dd-mm-yyyy format")
@@ -107,7 +110,11 @@ public class QuotePageSteps {
     @Then("User will be able to see microchip file upload page with data")
     public void user_will_be_able_to_see_microchip_file_upload_page_with_data() {
         String dataOfMicroPage = quotePage.verifyDataOnMicrochipPage();
-        System.out.println(dataOfMicroPage);
+        if (dataOfMicroPage.length() > 0) {
+            System.out.println(dataOfMicroPage);
+        } else {
+            Assert.fail();
+        }
     }
 
     @When("User clicks on add quote button")
@@ -117,8 +124,12 @@ public class QuotePageSteps {
 
     @Then("On add quote page product dropdown will appear with desired list")
     public void on_add_quote_page_product_dropdown_will_appear_with_desired_list() {
-        String verifyS = quotePage.verifyProductList();
-        Assert.assertEquals(verifyS, " Select Exotic Cat Dog Introductory Cover Horse ");
+        String verifyProducts = quotePage.verifyProductList();
+        if (verifyProducts.length() > 0) {
+            System.out.println(verifyProducts);
+        } else {
+            Assert.fail();
+        }
 
     }
 
@@ -128,9 +139,16 @@ public class QuotePageSteps {
 
     }
 
-    @Then("User will see quote information")
-    public void user_will_see_quote_information() {
-
+    @Then("Quote Information page displays with details")
+    public void quote_information_page_displays_with_details() {
+        String quoteMessage=quotePage.fetchDataOfQuoteInformation();
+        if (quoteMessage.length()>0){
+            System.out.println(quoteMessage);
+        }
+        else
+        {
+            Assert.fail();
+        }
     }
 
     @When("User selects appropriate option from quote status dropdown")

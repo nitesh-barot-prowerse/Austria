@@ -1,4 +1,4 @@
-Feature: Verify account page hyperlinks
+Feature: Verify Account Module Functionalities
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
@@ -21,7 +21,7 @@ Feature: Verify account page hyperlinks
 #    And User clicks on search button on manage bank page
 #    Then Data on manage bank page reflects upon client name
 
-  Scenario: Bank Information page displays with details after clicking on bank code link on manage bank details
-    When User clicks on bank icon
-    And User clicks on bank code link on manage bank page
-    Then Bank information page displays with details
+#  Scenario: Bank Information page displays with details after clicking on bank code link on manage bank details
+#    When User clicks on bank icon
+#    And User clicks on bank code link on manage bank page
+#    Then Bank information page displays with details

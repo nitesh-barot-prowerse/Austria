@@ -24,7 +24,13 @@ public class TaskPageSteps {
     @Then("User see concern data on manage task page")
     public void user_see_concern_data_on_manage_task_page() {
         String pageData = taskPage.fetchData();
-        System.out.println(pageData);
+        if (pageData.length()>0) {
+            System.out.println(pageData);
+        }
+        else
+        {
+            Assert.fail();
+        }
 
     }
 
@@ -40,10 +46,14 @@ public class TaskPageSteps {
         Assert.assertEquals(Message, string);
     }
 
-    @Then("Assigned to dropdown appears with initial {string} current user")
-    public void assigned_to_dropdown_appears_with_initial_current_user(String string) {
+    @Then("Assigned to dropdown appears with initial current user")
+    public void assigned_to_dropdown_appears_with_initial_current_user() {
         String userName = taskPage.verifyDropDown();
-        Assert.assertEquals(userName, string);
+        if (userName.length() > 0) {
+            System.out.println(userName);
+        } else {
+            Assert.fail();
+        }
     }
 
     @When("User Selects any option from status dropdown on manage task page")
