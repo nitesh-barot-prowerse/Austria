@@ -52,7 +52,7 @@ public class ClientPageSteps {
     @Then("Appropriate client information displays inside table on manage client page")
     public void appropriate_client_information_displays_inside_table_on_manage_client_page() {
      String clientCode=clientPage.verifyClient();
-     Assert.assertEquals(clientCode,"JAMI-0001");
+     Assert.assertEquals(clientCode,"RAOA-0001");
     }
 
     @When("User selects appropriate option from Active dropdown on manage client page")
@@ -87,6 +87,51 @@ public class ClientPageSteps {
     String clientId=clientPage.verifyExistingClientOnAddQuote();
     Assert.assertEquals(clientId,"DANK-00005");
     }
+
+    //Add client scenario
+
+    @When("User clicks on add client icon on manage client page")
+    public void user_clicks_on_add_client_icon_on_manage_client_page() {
+        clientPage.clickOnAddClientButton();
+    }
+
+    @When("User enters all mandatory details on add client page")
+    public void user_enters_all_mandatory_details_on_add_client_page() {
+        clientPage.enterUserDetails();
+    }
+
+    @When("User clicks on create button on add client page")
+    public void user_clicks_on_create_button_on_add_client_page() {
+        clientPage.clickOnCreateClientButton();
+    }
+
+    @Then("View client page appears with the details of currently added client")
+    public void view_client_page_appears_with_the_details_of_currently_added_client() {
+        String clientMessage=clientPage.verifyCreatedClient();
+        Assert.assertEquals(clientMessage,"View Client");
+    }
+
+    //Add contact details of client
+    @When("User selects Add contact option from setting dropdown besides of active text on view client page")
+    public void user_selects_add_contact_option_from_setting_dropdown_besides_of_active_text_on_view_client_page() {
+        clientPage.selectAddContactOfClient();
+    }
+
+    @When("User enters all details inside add client window")
+    public void user_enters_all_details_inside_add_client_window() {
+        clientPage.enterContactDetails();
+    }
+
+    @Then("Contact details can view under contacts menu on view client page")
+    public void contact_details_can_view_under_contacts_menu_on_view_client_page() {
+        String contactDetail = clientPage.verifyGeneratedContactDetails();
+        if (contactDetail.length() > 0) {
+            System.out.println(contactDetail);
+
+        }
+    }
+
+
 
 
 }

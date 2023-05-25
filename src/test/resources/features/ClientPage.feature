@@ -6,8 +6,14 @@ Feature: Verify Client Module Features
     And User selects language option
     When User clicks on client icon on left tool bar
 
-  Scenario: User will redirect to manage client page after clicking on client icon on left tool bar
+  Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
+#
+#  Scenario: To add and verify new client details inside client client module
+#    When User clicks on add client icon on manage client page
+#    And User enters all mandatory details on add client page
+#    And User clicks on create button on add client page
+#    Then View client page appears with the details of currently added client
 
 #  Scenario: Appropriate client data will display upon entering  code in search box
 #    When User enters code number inside search box on manage client page
@@ -24,3 +30,9 @@ Feature: Verify Client Module Features
 #    When User clicks on client code on manage client page
 #    And User clicks on add button on view client page
 #    Then Add quote page displays with same client code
+
+#  Scenario:Verify add contact feature of client
+#    When User clicks on client code on manage client page
+#    And User selects Add contact option from setting dropdown besides of active text on view client page
+#    And User enters all details inside add client window
+#    Then Contact details can view under contacts menu on view client page

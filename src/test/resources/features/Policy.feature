@@ -8,7 +8,7 @@ Feature: Verify Policy Module Features
   Scenario: Check of manage policy page
     Then User can see "Manage Policy" message with all policy data
 
-  Scenario: Verify Date format of start date and and date column data
+  Scenario: Verify Date format of start date and end date under column data on manage policy page
     Then All data under Start date and And date displays in dd-mm-yyyy format
 
   Scenario: User will able to see policy information page after clicking on policy link on manage policy page
