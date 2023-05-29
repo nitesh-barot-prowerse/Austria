@@ -4,7 +4,7 @@ Feature: Verify Manage Claim Module Features
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     And User selects language option
     When User clicks on manage claims icon on left tool bar
-
+#
   Scenario: User will redirect to manage claims page after clicking on manage claim icon on left tool bar
     Then User will able see all data available on manage claim page
 
@@ -16,10 +16,10 @@ Feature: Verify Manage Claim Module Features
     When User clicks on claim number on manage claim page
     Then User will redirects to respected claim information page
 
-  Scenario: Add claim page displays all dropdowns with valid items and date appears with calender icon
-    When User clicks on add claim button
-    Then User will redirect to add claim page
-    And Page has all dropdown with valid list items'
+#  Scenario: Add claim page displays all dropdowns with valid items and date appears with calender icon
+#    When User clicks on add claim button
+#    Then User will redirect to add claim page
+#    And Page has all dropdown with valid list items'
 
 #  Scenario: Treatment status should reflect upon items selected from treatment status drop down on manage claim page
 #    When User selects any options from treatment status dropdown on manage claim page

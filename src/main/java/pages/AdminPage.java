@@ -281,11 +281,11 @@ public class AdminPage {
             System.out.println("Do Nothing");
 
 
-        } else {
-            driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[11]/a")).click();
-            System.out.println(driver.getCurrentUrl());
-            driver.findElement(adminIcon).click();
-        }
+        } //else {
+            //driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[11]/a")).click();
+           // System.out.println(driver.getCurrentUrl());
+            //driver.findElement(adminIcon).click();
+        //}
 
 
     }

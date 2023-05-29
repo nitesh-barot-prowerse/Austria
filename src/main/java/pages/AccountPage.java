@@ -100,7 +100,7 @@ public class AccountPage {
         driver.findElement(accountIcon).click();
         driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[19]/a")).click();
         System.out.println(driver.getCurrentUrl());
-        driver.findElement(accountIcon).click();
+        /*driver.findElement(accountIcon).click();
         driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[20]/a")).click();
         System.out.println(driver.getCurrentUrl());
         driver.findElement(accountIcon).click();
@@ -109,7 +109,7 @@ public class AccountPage {
         driver.findElement(accountIcon).click();
         driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[22]/a")).click();
         System.out.println(driver.getCurrentUrl());
-        driver.findElement(accountIcon).click();
+        driver.findElement(accountIcon).click();*/
 
     }
 

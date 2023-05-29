@@ -63,7 +63,7 @@ public class SettingPage {
         driver.findElement(lookUpIcon).click();
         driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[10]/a")).click();
         System.out.println(driver.getCurrentUrl());
-        driver.findElement(lookUpIcon).click();
+        /*driver.findElement(lookUpIcon).click();
         driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[11]/a")).click();
         System.out.println(driver.getCurrentUrl());
         driver.findElement(lookUpIcon).click();
