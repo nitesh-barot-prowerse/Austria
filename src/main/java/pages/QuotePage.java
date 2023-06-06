@@ -35,6 +35,22 @@ public class QuotePage {
 
     private By statusOpen=By.xpath("//div[@class='ms-drop']/ul/li[1]");
 
+    //Fetch quote list based upon product dropdown options
+
+    private By productDropdown=By.xpath("//div[@class='ibox-content-search m-b-sm']/div[1]/div[1]/div[2]/div/span");
+
+    private By optionsFromProductDD=By.xpath("//ul[@id='ProductId_listbox']/li[3]");
+
+    private By searchButton=By.cssSelector("button[id='SearchGrid']");
+
+    //Fetch quote on manage quote page based on quote number
+
+    private By quoteSearchBox=By.cssSelector("input[id='QuoteNumber']");
+
+    //Verify include payment feature of quote module for Qa
+
+    private By includePaymentCheckBox=By.cssSelector("div[id='search']>:nth-child(1)>:nth-child(6)>:nth-child(1)>div[class^='icheckbox_square-green']");
+
 
     public String verifyManageQuotePage() {
         driver.findElement(quoteIcon).click();
@@ -172,6 +188,11 @@ public class QuotePage {
             ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs2.get(1));
             System.out.println(driver.getCurrentUrl());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             displayMessage=displayMessage+driver.findElement(displayedMessage).getText();
             driver.close();
             driver.switchTo().window(tabs2.get(0));
@@ -199,6 +220,84 @@ public class QuotePage {
             array = array + " " + rEle.getText();
         }
         return array;
+    }
+
+    //Fetch list of quote based upon product drop down
+
+    public void selectOptionFromProductDropDown(){
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.findElement(productDropdown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionsFromProductDD).click();
+    }
+
+    public void clickOnSearchButton(){
+        driver.findElement(searchButton).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<WebElement> verifyListOfQuoteBasedOnProductDD(){
+        WebDriverWait wait=new WebDriverWait(driver,10);
+        List<WebElement> listOfProduct=wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[8]")));
+        return listOfProduct;
+
+    }
+
+    //Fetch quote on manage quote page based on quote number for UK2 Qa
+
+    public void enterQuoteNumberInsideSearchBox(){
+        driver.findElement(quoteSearchBox).sendKeys("Q0001777");
+    }
+
+    public String verifyQuoteDetails(){
+        WebDriverWait wait=new WebDriverWait(driver,10);
+        WebElement quoteInfo=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='gridName']/table/tbody/tr[1]")));
+        return quoteInfo.getText();
+    }
+
+    //Verify include payment feature of quote module for Qa
+
+    public void selectIncludePaymentCheckBox(){
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(includePaymentCheckBox).click();
+
+
+    }
+
+    public String verifyIncludePaymentDetailsOfQuote(){
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        WebElement quoteInfoIncludePayment = driver.findElement(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[17]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", quoteInfoIncludePayment);
+        //WebDriverWait wait=new WebDriverWait(driver,10);
+        // WebElement quoteInfoIncludePayment=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return quoteInfoIncludePayment.getText();
     }
 
 

@@ -4,8 +4,11 @@ import factory.DriverFactory;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.QuotePage;
+
+import java.util.List;
 
 public class QuotePageSteps {
     QuotePage quotePage = new QuotePage(DriverFactory.getDriver());
@@ -169,6 +172,68 @@ public class QuotePageSteps {
                 System.out.println("All Amount Under Yearly Premium Column Prefixed By £");
                 break;
             }
+        }
+
+    }
+
+    //Fetch list of quote based on product dropdown option
+
+    @When("User selects appropriate option from product dropdown on manage quote page")
+    public void user_selects_appropriate_option_from_product_dropdown_on_manage_quote_page() {
+        quotePage.selectOptionFromProductDropDown();
+
+    }
+
+    @When("User clicks on search button on manage quote page")
+    public void user_clicks_on_search_button_on_manage_quote_page() {
+        quotePage.clickOnSearchButton();
+
+    }
+
+    @Then("Appropriate list of quote will display")
+    public void appropriate_list_of_quote_will_display() {
+        List<WebElement> productList=quotePage.verifyListOfQuoteBasedOnProductDD();
+        if ((productList.size()>0)){
+            System.out.println("List of quotes display upon product dropdown value ");
+        }
+        else {
+            Assert.fail();
+        }
+
+    }
+
+    //Fetch quote on manage quote page based on quote number for stage
+
+    @When("User enters quote number inside search box on manage quote page")
+    public void user_enters_quote_number_inside_search_box_on_manage_quote_page() {
+        quotePage.enterQuoteNumberInsideSearchBox();
+    }
+
+    @Then("Appropriate quote information displays on manage quote page")
+    public void appropriate_quote_information_displays_on_manage_quote_page() {
+        String quoteInformation=quotePage.verifyQuoteDetails();
+        if(quoteInformation.length()>0){
+            System.out.println(quoteInformation);
+        }
+        else {
+            Assert.fail();
+        }
+    }
+
+    //Verify include payment feature of quote module for Stage
+    @When("User selects include payment only quotes checkbox")
+    public void user_selects_include_payment_only_quotes_checkbox() {
+        quotePage.selectIncludePaymentCheckBox();
+    }
+
+    @Then("Appropriate quote list displays on manage quote page")
+    public void appropriate_quote_list_displays_on_manage_quote_page() {
+        String quoteListIncludePayment=quotePage.verifyIncludePaymentDetailsOfQuote();
+        if(quoteListIncludePayment.length()>0){
+            System.out.println(quoteListIncludePayment);
+        }
+        else {
+            Assert.fail();
         }
 
     }
