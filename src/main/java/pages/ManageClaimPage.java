@@ -111,12 +111,12 @@ public class ManageClaimPage {
 
     }
 
-    public void redirectToClaimInformationPage() {
+    public String redirectToClaimInformationPage() {
 
         WebDriverWait cWait = new WebDriverWait(driver, 10);
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[5]/a")));
         int cSize = totalColumn.size();
-
+         String displayMessage=" ";
         for (WebElement cEle : totalColumn) {
             System.out.println(cEle.getText());
             cEle.click();
@@ -127,10 +127,16 @@ public class ManageClaimPage {
             }
             ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs2.get(1));
-            //driver.close();
-            //driver.switchTo().window(tabs2.get(0));
-            break;
+            //System.out.println(driver.getCurrentUrl());
+
+            System.out.println(driver.getCurrentUrl());
+            displayMessage = displayMessage + driver.findElement(displayedMessage).getText();
+
+
+            driver.close();
+            driver.switchTo().window(tabs2.get(0));
         }
+        return displayMessage;
     }
 
     public String verifyClaimInfoPageText() {
@@ -147,6 +153,11 @@ public class ManageClaimPage {
 
     public void clickAddClaimIcon() {
         driver.findElement(addClaimIcon).click();
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String verifyAddClaimPage() {
@@ -156,25 +167,25 @@ public class ManageClaimPage {
     public void verifyDropDown() {
         driver.findElement(treatmentDropdown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(riskCountryDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(lostCountryDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(insuredCountryDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -182,53 +193,55 @@ public class ManageClaimPage {
         js.executeScript("window.scrollBy(0,350)", "");
         driver.findElement(coverDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(statusDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(notifiedMethodDDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(paymentToDDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(conditionTypeDDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
 
+    //Treatment status should reflect upon option selected from treatment status drop down on manage claim page
+
     public void selectItemFromStatusDropDown(){
         driver.findElement(treatmentStatusDropDown).click();
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(selectItemFromStatusDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(clickSearchButton).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -236,7 +249,7 @@ public class ManageClaimPage {
 
     public String verifyTreatmentStatus(){
         WebDriverWait cWait = new WebDriverWait(driver, 10);
-        List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[20]/div")));
+        List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr")));
 
         String Status = " ";
         for (WebElement cEle : treatmentStatus) {

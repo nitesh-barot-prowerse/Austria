@@ -16,23 +16,24 @@ Feature: Verify Client Module Features
     And User enters all mandatory details on add client page
     And User clicks on create button on add client page
     Then View client page appears with the details of currently added client
-#
+
 ##  Scenario: Appropriate client data will display upon entering  code in search box
 ##    When User enters code number inside search box on manage client page
 ##    And User clicks on search button manage client page
 ##    Then Appropriate client information displays inside table on manage client page
 
-  @Stage  @Production
+  @Sanity
   Scenario: Filter list of client based on active status dropdown option on manage client page
     When User selects appropriate option from Active dropdown on manage client page
     And User clicks on search button
     And User clicks on client code on manage client page
     Then Client status displays on view client page
 
-#  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on add button on view client page
-#    Then Add quote page displays with same client code
+  @Sanity
+  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
+    When User clicks on client code on manage client page to add quote
+    And User clicks on add button on view client page
+    Then Add quote page displays with same client code
 
   @Stage
   Scenario:Verify add contact feature of client

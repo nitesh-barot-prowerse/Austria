@@ -104,20 +104,24 @@ public class PolicyPageSteps {
 
     }
 
+   //Check appropriate policy data should displays against option selected from status drop down on manage policy page
     @When("User selects any options from status dropdown")
     public void user_selects_any_options_from_status_dropdown() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
         policyPage.selectOptionFromStatusDropDown();
     }
 
     @Then("Appropriate data displays on manage policy page depend on drop down option")
     public void appropriate_data_displays_on_manage_policy_page_depend_on_drop_down_option() {
         String policyStatus = policyPage.verifyPolicyStatusUponDropDown();
-        System.out.println(policyStatus);
+        if (policyStatus.length()>0)
+        {
+            System.out.println(policyStatus);
+        }
+        else {
+            System.out.println("Failed to fetch data against status dropdown option");
+        }
+
     }
 
 }

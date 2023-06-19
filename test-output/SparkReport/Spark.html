@@ -51,7 +51,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jun 6, 2023 04:18:43 pm</span>
+                    <span class="badge badge-primary">Jun 19, 2023 11:32:53 am</span>
                 </a>
             </li>
         </ul>
@@ -128,35 +128,34 @@
 					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" href="#">@Sanity</a>
 						<a class="dropdown-item" href="#">@Stage</a>
-						<a class="dropdown-item" href="#">@Production</a>
 					</ul>
 				</li>
 			</ul>
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="fail" test-id="1"
+				<li class="test-item"  status="pass" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Account Module Functionalities</p>
-							<p class="duration text-sm">0h 0m 52s+147ms</p>
-							<span class="datetime">16:18:49 pm</span>
+							<p class="duration text-sm">0h 1m 31s+696ms</p>
+							<span class="datetime">11:32:59 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">Verify Account Module Functionalities</h5>
-									<span class='badge badge-success'>06.06.2023 16:18:49</span>
-									<span class='badge badge-danger'>06.06.2023 16:19:41</span>
-									<span class='badge badge-default'>0h 0m 52s+147ms</span>
+									<h5 class="test-status text-pass">Verify Account Module Functionalities</h5>
+									<span class='badge badge-success'>06.19.2023 11:32:59</span>
+									<span class='badge badge-danger'>06.19.2023 11:34:31</span>
+									<span class='badge badge-default'>0h 1m 31s+696ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -169,12 +168,9 @@
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">All hyperlinks with icons on account page should work</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
 				</div>
-					<div class="status-avatar float-right mr-4">
-						<i class="fa fa-paperclip"></i>
-					</div>
 			</div>
 		</div>
 				<div class="collapse">
@@ -201,42 +197,19 @@
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start when" title="steps.AccountPageSteps.user_clicks_on_icon()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>When User clicks on icon</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li class="">...</li> is not clickable at point (35, 380). Other element would receive the click: <div id="loading" style="">...</div>
-  (Session info: chrome=113.0.5672.129)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROWERSE-014', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.AccountPage.traversingThroughPages(AccountPage.java:100)
-	at steps.AccountPageSteps.user_clicks_on_icon(AccountPageSteps.java:19)
-	at ✽.User clicks on icon(file:///C:/Users/prowe/IdeaProjects/Austria/src/test/resources/features/AccountPage.feature:9)
-</textarea>
+				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start then" title="steps.AccountPageSteps.user_will_redirect_to_respected_page()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>Then User will redirect to respected page</span>
 							</div>
-				<div class="details">Step skipped</div>
+				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -244,14 +217,6 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
 							</div>
 				<div class="details">https://fitlocal.petcover.at:91/</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
 					</div>
 				</div>
 	</div>
@@ -268,8 +233,8 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Admin Module Features</p>
-							<p class="duration text-sm">0h 1m 6s+276ms</p>
-							<span class="datetime">16:19:49 pm</span>
+							<p class="duration text-sm">0h 1m 22s+858ms</p>
+							<span class="datetime">11:34:36 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -277,9 +242,9 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Admin Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:19:49</span>
-									<span class='badge badge-danger'>06.06.2023 16:20:55</span>
-									<span class='badge badge-default'>0h 1m 6s+276ms</span>
+									<span class='badge badge-success'>06.19.2023 11:34:36</span>
+									<span class='badge badge-danger'>06.19.2023 11:35:59</span>
+									<span class='badge badge-default'>0h 1m 22s+858ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -466,28 +431,28 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="48"
+				<li class="test-item"  status="fail" test-id="48"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">V Verify Approve Claim  Module Features</p>
-							<p class="duration text-sm">0h 0m 15s+411ms</p>
-							<span class="datetime">16:20:59 pm</span>
+							<p class="duration text-sm">0h 0m 15s+629ms</p>
+							<span class="datetime">11:36:04 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">V Verify Approve Claim  Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:20:59</span>
-									<span class='badge badge-danger'>06.06.2023 16:21:14</span>
-									<span class='badge badge-default'>0h 0m 15s+411ms</span>
+									<h5 class="test-status text-fail">V Verify Approve Claim  Module Features</h5>
+									<span class='badge badge-success'>06.19.2023 11:36:04</span>
+									<span class='badge badge-danger'>06.19.2023 11:36:20</span>
+									<span class='badge badge-default'>0h 0m 15s+629ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -500,9 +465,12 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
 				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
 			</div>
 		</div>
 				<div class="collapse">
@@ -536,12 +504,17 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start and" title="steps.ApproveClaimsPageSteps.user_will_able_to_see_data_on_approve_claims_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
 								</span>
 								<span>And User will able to see data on approve claims page</span>
 							</div>
-				<div class="details"></div>
+				<textarea disabled class="code-block">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at steps.ApproveClaimsPageSteps.user_will_able_to_see_data_on_approve_claims_page(ApproveClaimsPageSteps.java:30)
+	at ✽.User will able to see data on approve claims page(file:///C:/Users/prowe/IdeaProjects/Austria/src/test/resources/features/ApproveClaim.feature:11)
+</textarea>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -549,34 +522,42 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
 							</div>
 				<div class="details">https://fitlocal.petcover.at:91/</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
 					</div>
 				</div>
 	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="60"
+				<li class="test-item"  status="pass" test-id="60"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Client Module Features</p>
-							<p class="duration text-sm">0h 5m 17s+691ms</p>
-							<span class="datetime">16:21:17 pm</span>
+							<p class="duration text-sm">0h 0m 58s+650ms</p>
+							<span class="datetime">11:36:25 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">Verify Client Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:21:17</span>
-									<span class='badge badge-danger'>06.06.2023 16:26:35</span>
-									<span class='badge badge-default'>0h 5m 17s+691ms</span>
+									<h5 class="test-status text-pass">Verify Client Module Features</h5>
+									<span class='badge badge-success'>06.19.2023 11:36:25</span>
+									<span class='badge badge-danger'>06.19.2023 11:37:23</span>
+									<span class='badge badge-default'>0h 0m 58s+650ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -707,7 +688,7 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">Verify add contact feature of client</div>
+				<div class="node">To check whether add quote page is displays for same user by clicking on add button on view client page</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -736,616 +717,25 @@ Session ID: 2599203ec6ac1dc32e75ca01ecb5b1ff
 								<span>When User clicks on client icon on left tool bar</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page()">
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page_to_add_quote()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When User clicks on client code on manage client page</span>
+								<span>When User clicks on client code on manage client page to add quote</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_contact_option_from_setting_dropdown_besides_of_active_text_on_view_client_page()">
+							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_clicks_on_add_button_on_view_client_page()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>And User selects Add contact option from setting dropdown besides of active text on view client page</span>
+								<span>And User clicks on add button on view client page</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_client_window()">
+							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.add_quote_page_displays_with_same_client_code()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>And User enters all details inside add client window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.contact_details_can_view_under_contacts_menu_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Contact details can view under contacts menu on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Verify add notes feature of client</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client code on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_notes_options_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects Add notes options from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_notes_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details inside add notes window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.notes_details_can_view_under_note_menu_tab_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Notes details can view under note menu tab on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Verify add task feature of client</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client code on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_task_options_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects Add task options from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_task_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details inside add task window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.task_details_can_view_under_task_menu_tab_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Task details can view under task menu tab on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">To verify edit client functionality for existing client</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-					<div class="status-avatar float-right mr-4">
-						<i class="fa fa-paperclip"></i>
-					</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client code on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_edit_client_sections_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects edit client sections from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_of_client_on_edit_client_window()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>And User enters all details of client on edit client window</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[id='FirstName']"}
-  (Session info: chrome=113.0.5672.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROWERSE-014', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd5996ad67ed4b894db21076996b7a2c
-*** Element info: {Using=css selector, value=input[id='FirstName']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.ClientPage.editClientData(ClientPage.java:497)
-	at steps.ClientPageSteps.user_enters_all_details_of_client_on_edit_client_window(ClientPageSteps.java:193)
-	at ✽.User enters all details of client on edit client window(file:///C:/Users/prowe/IdeaProjects/Austria/src/test/resources/features/ClientPage.feature:62)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.updated_details_can_view_on_view_client_page()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then Updated details can view on view client page</span>
-							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Verify add primary contact feature of client on production</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_enters_test_client_code_inside_search_box_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User enters test client code inside search box on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.uer_clicks_on_search_button_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And Uer clicks on search button on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page_on_production()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User clicks on client code on manage client page on production</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_contact_option_from_setting_dropdown_besides_of_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects Add contact option from setting dropdown besides of active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_client_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details inside add client window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.contact_details_can_view_under_contacts_menu_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Contact details can view under contacts menu on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Verify add notes feature of client on production environment</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_enters_test_client_code_inside_search_box_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User enters test client code inside search box on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.uer_clicks_on_search_button_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And Uer clicks on search button on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page_on_production()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User clicks on client code on manage client page on production</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_notes_options_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects Add notes options from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_notes_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details inside add notes window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.notes_details_can_view_under_note_menu_tab_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Notes details can view under note menu tab on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Verify add task feature of client on production environment</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_enters_test_client_code_inside_search_box_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User enters test client code inside search box on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.uer_clicks_on_search_button_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And Uer clicks on search button on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page_on_production()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User clicks on client code on manage client page on production</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_add_task_options_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects Add task options from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_inside_add_task_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details inside add task window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.task_details_can_view_under_task_menu_tab_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Task details can view under task menu tab on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">To verify edit client functionality for existing client on production environment</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_clicks_on_client_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on client icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ClientPageSteps.user_enters_test_client_code_inside_search_box_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User enters test client code inside search box on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.uer_clicks_on_search_button_on_manage_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And Uer clicks on search button on manage client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_clicks_on_client_code_on_manage_client_page_on_production()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User clicks on client code on manage client page on production</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_selects_edit_client_sections_from_setting_dropdown_besides_the_active_text_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects edit client sections from setting dropdown besides the active text on view client page</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.ClientPageSteps.user_enters_all_details_of_client_on_edit_client_window()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User enters all details of client on edit client window</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ClientPageSteps.updated_details_can_view_on_view_client_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Updated details can view on view client page</span>
+								<span>Then Add quote page displays with same client code</span>
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -1361,7 +751,7 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="196"
+				<li class="test-item"  status="pass" test-id="96"
 					author=""
 					tag=""
 					device="">
@@ -1371,8 +761,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify DashBoard Items</p>
-							<p class="duration text-sm">0h 0m 9s+121ms</p>
-							<span class="datetime">16:26:39 pm</span>
+							<p class="duration text-sm">0h 0m 12s+8ms</p>
+							<span class="datetime">11:37:27 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1380,9 +770,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify DashBoard Items</h5>
-									<span class='badge badge-success'>06.06.2023 16:26:39</span>
-									<span class='badge badge-danger'>06.06.2023 16:26:48</span>
-									<span class='badge badge-default'>0h 0m 9s+121ms</span>
+									<span class='badge badge-success'>06.19.2023 11:37:27</span>
+									<span class='badge badge-danger'>06.19.2023 11:37:39</span>
+									<span class='badge badge-default'>0h 0m 12s+8ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1436,7 +826,7 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="206"
+				<li class="test-item"  status="pass" test-id="106"
 					author=""
 					tag=""
 					device="">
@@ -1446,8 +836,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Launched Page Verification by displayed text</p>
-							<p class="duration text-sm">0h 0m 1s+454ms</p>
-							<span class="datetime">16:26:51 pm</span>
+							<p class="duration text-sm">0h 0m 1s+523ms</p>
+							<span class="datetime">11:37:44 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1455,9 +845,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Launched Page Verification by displayed text</h5>
-									<span class='badge badge-success'>06.06.2023 16:26:51</span>
-									<span class='badge badge-danger'>06.06.2023 16:26:53</span>
-									<span class='badge badge-default'>0h 0m 1s+454ms</span>
+									<span class='badge badge-success'>06.19.2023 11:37:44</span>
+									<span class='badge badge-danger'>06.19.2023 11:37:45</span>
+									<span class='badge badge-default'>0h 0m 1s+523ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1511,7 +901,7 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="216"
+				<li class="test-item"  status="pass" test-id="116"
 					author=""
 					tag=""
 					device="">
@@ -1521,8 +911,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Log out functionality</p>
-							<p class="duration text-sm">0h 0m 11s+339ms</p>
-							<span class="datetime">16:26:56 pm</span>
+							<p class="duration text-sm">0h 0m 14s+398ms</p>
+							<span class="datetime">11:37:49 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1530,9 +920,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Log out functionality</h5>
-									<span class='badge badge-success'>06.06.2023 16:26:56</span>
-									<span class='badge badge-danger'>06.06.2023 16:27:07</span>
-									<span class='badge badge-default'>0h 0m 11s+339ms</span>
+									<span class='badge badge-success'>06.19.2023 11:37:49</span>
+									<span class='badge badge-danger'>06.19.2023 11:38:03</span>
+									<span class='badge badge-default'>0h 0m 14s+398ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1593,7 +983,7 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="227"
+				<li class="test-item"  status="pass" test-id="127"
 					author=""
 					tag=""
 					device="">
@@ -1603,8 +993,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Login To Admin Panel</p>
-							<p class="duration text-sm">0h 0m 14s+181ms</p>
-							<span class="datetime">16:27:11 pm</span>
+							<p class="duration text-sm">0h 0m 13s+786ms</p>
+							<span class="datetime">11:38:08 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1612,9 +1002,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Login To Admin Panel</h5>
-									<span class='badge badge-success'>06.06.2023 16:27:11</span>
-									<span class='badge badge-danger'>06.06.2023 16:27:26</span>
-									<span class='badge badge-default'>0h 0m 14s+181ms</span>
+									<span class='badge badge-success'>06.19.2023 11:38:08</span>
+									<span class='badge badge-danger'>06.19.2023 11:38:22</span>
+									<span class='badge badge-default'>0h 0m 13s+786ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1675,7 +1065,7 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="238"
+				<li class="test-item"  status="pass" test-id="138"
 					author=""
 					tag=""
 					device="">
@@ -1685,8 +1075,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Manage Claim Module Features</p>
-							<p class="duration text-sm">0h 1m 27s+796ms</p>
-							<span class="datetime">16:27:29 pm</span>
+							<p class="duration text-sm">0h 2m 24s+87ms</p>
+							<span class="datetime">11:38:27 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1694,9 +1084,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Manage Claim Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:27:29</span>
-									<span class='badge badge-danger'>06.06.2023 16:28:57</span>
-									<span class='badge badge-default'>0h 1m 27s+796ms</span>
+									<span class='badge badge-success'>06.19.2023 11:38:27</span>
+									<span class='badge badge-danger'>06.19.2023 11:40:51</span>
+									<span class='badge badge-default'>0h 2m 24s+87ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1929,10 +1319,66 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Treatment status should reflect upon option selected from treatment status drop down on manage claim page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ManageClaimsSteps.user_clicks_on_manage_claims_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on manage claims icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ManageClaimsSteps.user_selects_any_options_from_treatment_status_dropdown_on_manage_claim_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User selects any options from treatment status dropdown on manage claim page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.ManageClaimsSteps.appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Appropriate treatment status will display on manage claim page under claim details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="283"
+				<li class="test-item"  status="pass" test-id="194"
 					author=""
 					tag=""
 					device="">
@@ -1942,8 +1388,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Policy Module Features</p>
-							<p class="duration text-sm">0h 1m 36s+543ms</p>
-							<span class="datetime">16:29:01 pm</span>
+							<p class="duration text-sm">0h 2m 19s+19ms</p>
+							<span class="datetime">11:41:01 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1951,9 +1397,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Policy Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:29:01</span>
-									<span class='badge badge-danger'>06.06.2023 16:30:37</span>
-									<span class='badge badge-default'>0h 1m 36s+543ms</span>
+									<span class='badge badge-success'>06.19.2023 11:41:01</span>
+									<span class='badge badge-danger'>06.19.2023 11:43:20</span>
+									<span class='badge badge-default'>0h 2m 19s+19ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -2186,10 +1632,66 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Check appropriate policy data should displays against option selected from status drop down on manage policy page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.PolicyPageSteps.user_clicks_on_policy_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on policy icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.PolicyPageSteps.user_selects_any_options_from_status_dropdown()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User selects any options from status dropdown</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.PolicyPageSteps.appropriate_data_displays_on_manage_policy_page_depend_on_drop_down_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Appropriate data displays on manage policy page depend on drop down option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="328"
+				<li class="test-item"  status="fail" test-id="250"
 					author=""
 					tag=""
 					device="">
@@ -2199,8 +1701,8 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Quote Module Features</p>
-							<p class="duration text-sm">0h 4m 7s+506ms</p>
-							<span class="datetime">16:30:41 pm</span>
+							<p class="duration text-sm">0h 4m 38s+514ms</p>
+							<span class="datetime">11:43:24 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -2208,9 +1710,9 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">Verify Quote Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:30:41</span>
-									<span class='badge badge-danger'>06.06.2023 16:34:48</span>
-									<span class='badge badge-default'>0h 4m 7s+506ms</span>
+									<span class='badge badge-success'>06.19.2023 11:43:24</span>
+									<span class='badge badge-danger'>06.19.2023 11:48:02</span>
+									<span class='badge badge-default'>0h 4m 38s+514ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -2425,100 +1927,6 @@ Session ID: cd5996ad67ed4b894db21076996b7a2c
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">To check whether user will able able to redirect and see data on microchip file upload  page after clicking on upload microchip button on manage quote page</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-					<div class="status-avatar float-right mr-4">
-						<i class="fa fa-paperclip"></i>
-					</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_quote_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on quote icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_upload_microchip_file_button()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>When User clicks on upload microchip file button</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='form-group pull-right']/div/a[3]"}
-  (Session info: chrome=113.0.5672.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROWERSE-014', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cd14ff929487d907439a27faf7727f6
-*** Element info: {Using=xpath, value=//div[@class='form-group pull-right']/div/a[3]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.QuotePage.clickOnMicrochipButton(QuotePage.java:136)
-	at steps.QuotePageSteps.user_clicks_on_upload_microchip_file_button(QuotePageSteps.java:111)
-	at ✽.User clicks on upload microchip file button(file:///C:/Users/prowe/IdeaProjects/Austria/src/test/resources/features/QuotePage.feature:28)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.QuotePageSteps.user_will_be_able_to_see_microchip_file_upload_page_with_data()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then User will be able to see microchip file upload page with data</span>
-							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
 				<div class="node">On the Add Quote page, verify that the Product dropdown appears with list of products</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
@@ -2616,62 +2024,6 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>Then Quote Information page displays with details</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">https://fitlocal.petcover.at:91/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">Items on manage quote page displays upon item select from quote status dropdown</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And User selects language option</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_quote_icon_on_left_tool_bar()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on quote icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_selects_appropriate_option_from_quote_status_dropdown()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User selects appropriate option from quote status dropdown</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.QuotePageSteps.respected_data_will_be_displayed_on_manage_quote_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Respected data will be displayed on Manage quote page</span>
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -2873,10 +2225,118 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Edit quote details and verifies the same</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_quote_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on quote icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_enters_quote_number_inside_search_box_on_manage_quote_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User enters quote number inside search box on manage quote page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_clicks_on_search_button_on_manage_quote_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on search button on manage quote page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_selects_edit_quote_option_from_cog_icon_on_quote_information_page()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>And User selects edit quote option from cog icon on quote information page</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='gridName']/table/tbody/tr[1]/td[18]/ul/li[1]/a"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PROWERSE-014', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34939e560671137273d5707f1c794281
+*** Element info: {Using=xpath, value=//div[@id='gridName']/table/tbody/tr[1]/td[18]/ul/li[1]/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.QuotePage.selectEditQuoteOption(QuotePage.java:374)
+	at steps.QuotePageSteps.user_selects_edit_quote_option_from_cog_icon_on_quote_information_page(QuotePageSteps.java:241)
+	at ✽.User selects edit quote option from cog icon on quote information page(file:///C:/Users/prowe/IdeaProjects/Austria/src/test/resources/features/QuotePage.feature:68)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.QuotePageSteps.user_can_edit_all_required_field_on_edit_quote_page()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then User can edit all required field on edit quote page</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="450"
+				<li class="test-item"  status="pass" test-id="363"
 					author=""
 					tag=""
 					device="">
@@ -2886,8 +2346,8 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Report Module Features</p>
-							<p class="duration text-sm">0h 0m 27s+355ms</p>
-							<span class="datetime">16:34:52 pm</span>
+							<p class="duration text-sm">0h 1m 46s+538ms</p>
+							<span class="datetime">11:48:06 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -2895,9 +2355,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Report Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:34:52</span>
-									<span class='badge badge-danger'>06.06.2023 16:35:20</span>
-									<span class='badge badge-default'>0h 0m 27s+355ms</span>
+									<span class='badge badge-success'>06.19.2023 11:48:06</span>
+									<span class='badge badge-danger'>06.19.2023 11:49:53</span>
+									<span class='badge badge-default'>0h 1m 46s+538ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -3014,7 +2474,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="472"
+				<li class="test-item"  status="pass" test-id="385"
 					author=""
 					tag=""
 					device="">
@@ -3024,8 +2484,8 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Setting Module Features</p>
-							<p class="duration text-sm">0h 0m 24s+687ms</p>
-							<span class="datetime">16:35:24 pm</span>
+							<p class="duration text-sm">0h 1m 11s+99ms</p>
+							<span class="datetime">11:49:57 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -3033,9 +2493,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Setting Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:35:24</span>
-									<span class='badge badge-danger'>06.06.2023 16:35:49</span>
-									<span class='badge badge-default'>0h 0m 24s+687ms</span>
+									<span class='badge badge-success'>06.19.2023 11:49:57</span>
+									<span class='badge badge-danger'>06.19.2023 11:51:09</span>
+									<span class='badge badge-default'>0h 1m 11s+99ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -3103,7 +2563,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="484"
+				<li class="test-item"  status="pass" test-id="397"
 					author=""
 					tag=""
 					device="">
@@ -3113,8 +2573,8 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Task Module Features</p>
-							<p class="duration text-sm">0h 0m 32s+915ms</p>
-							<span class="datetime">16:35:53 pm</span>
+							<p class="duration text-sm">0h 2m 5s+110ms</p>
+							<span class="datetime">11:51:13 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -3122,9 +2582,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Task Module Features</h5>
-									<span class='badge badge-success'>06.06.2023 16:35:53</span>
-									<span class='badge badge-danger'>06.06.2023 16:36:25</span>
-									<span class='badge badge-default'>0h 0m 32s+915ms</span>
+									<span class='badge badge-success'>06.19.2023 11:51:13</span>
+									<span class='badge badge-danger'>06.19.2023 11:53:18</span>
+									<span class='badge badge-default'>0h 2m 5s+110ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -3252,6 +2712,286 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Appropriate data should display upon selecting an option from the status drop down on managing task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_status_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from status dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.status_tage_of_manage_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Status tage of manage task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Appropriate data should display upon selecting an option from the priority drop down on managing task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_priority_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from priority dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_priority_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Data under priority column of task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Appropriate data should display upon selecting an option from the type drop down on managing task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_type_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from type dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_type_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Data under type column of task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Appropriate data should display upon selecting an option from the client drop down on managing task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_client_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from client dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_client_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Data under client column of task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check task details should open after clicking on task title on manage task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.LogInPageSteps.user_selects_language_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects language option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_tile_on_task_manage_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task tile on task manage page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.task_details_window_will_open_with_all_task_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Task details window will open with all task details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">https://fitlocal.petcover.at:91/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
@@ -3285,7 +3025,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">3</span>
+					<span class="badge badge-primary">2</span>
 					</a>
 				</li>
 			</ul>
@@ -3296,463 +3036,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">@Sanity</p>
-							<p class="duration text-sm">30 tests</p>
+							<p class="duration text-sm">40 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>28</span>
-							<span class='badge badge-danger'>2</span>
-							
-							
-							</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>@Sanity</h4>
-							<span status="pass" class='badge badge-success'>28 passed</span>
-							<span status="fail" class='badge badge-danger'>2 failed</span>
-							
-							
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="tag-test-status" status="fail">
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>16:18:49 pm</td>
-									<td class='linked' test-id='2'>
-										All hyperlinks with icons on account page should work
-										<div class="">
-											<span class="badge badge-default">Verify Account Module Functionalities.All hyperlinks with icons on account page should work</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:19:49 pm</td>
-									<td class='linked' test-id='14'>
-										Check Letter information  on manage letter page
-										<div class="">
-											<span class="badge badge-default">Verify Admin Module Features.Check Letter information  on manage letter page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:20:09 pm</td>
-									<td class='linked' test-id='25'>
-										To check Edit Letter Template page should open with the template data in editable format.
-										<div class="">
-											<span class="badge badge-default">Verify Admin Module Features.To check Edit Letter Template page should open with the template data in editable format.</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:20:31 pm</td>
-									<td class='linked' test-id='38'>
-										Verify that the Administration page displays with a set of icons and corresponding page should  opens on clicking individual icon.
-										<div class="">
-											<span class="badge badge-default">Verify Admin Module Features.Verify that the Administration page displays with a set of icons and corresponding page should  opens on clicking individual icon.</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:20:59 pm</td>
-									<td class='linked' test-id='49'>
-										Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page
-										<div class="">
-											<span class="badge badge-default">V Verify Approve Claim  Module Features.Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:21:17 pm</td>
-									<td class='linked' test-id='61'>
-										Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
-										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:26:39 pm</td>
-									<td class='linked' test-id='197'>
-										Verify Client,Quote,Policy,Claim details on dash board page
-										<div class="">
-											<span class="badge badge-default">Verify DashBoard Items.Verify Client,Quote,Policy,Claim details on dash board page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:26:51 pm</td>
-									<td class='linked' test-id='207'>
-										Check displayed text on homepage
-										<div class="">
-											<span class="badge badge-default">Launched Page Verification by displayed text.Check displayed text on homepage</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:26:56 pm</td>
-									<td class='linked' test-id='217'>
-										Verify log out feature of system
-										<div class="">
-											<span class="badge badge-default">Verify Log out functionality.Verify log out feature of system</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:27:11 pm</td>
-									<td class='linked' test-id='228'>
-										Verify Login event
-										<div class="">
-											<span class="badge badge-default">Login To Admin Panel.Verify Login event</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:27:29 pm</td>
-									<td class='linked' test-id='239'>
-										User will redirect to manage claims page after clicking on manage claim icon on left tool bar
-										<div class="">
-											<span class="badge badge-default">Verify Manage Claim Module Features.User will redirect to manage claims page after clicking on manage claim icon on left tool bar</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:27:48 pm</td>
-									<td class='linked' test-id='249'>
-										All data under date column displays with dd-mm-yyyy format and data under amount should prefixed by £ sign on manage claim page
-										<div class="">
-											<span class="badge badge-default">Verify Manage Claim Module Features.All data under date column displays with dd-mm-yyyy format and data under amount should prefixed by £ sign on manage claim page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:28:05 pm</td>
-									<td class='linked' test-id='260'>
-										User will redirect to respected claim information page by clicking on claim number link on manage claim page
-										<div class="">
-											<span class="badge badge-default">Verify Manage Claim Module Features.User will redirect to respected claim information page by clicking on claim number link on manage claim page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:28:26 pm</td>
-									<td class='linked' test-id='271'>
-										Add claim page displays all dropdowns with valid items and date appears with calender icon
-										<div class="">
-											<span class="badge badge-default">Verify Manage Claim Module Features.Add claim page displays all dropdowns with valid items and date appears with calender icon</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:29:01 pm</td>
-									<td class='linked' test-id='284'>
-										List of policies should display by clicking on policy icon on left tool bar
-										<div class="">
-											<span class="badge badge-default">Verify Policy Module Features.List of policies should display by clicking on policy icon on left tool bar</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:29:14 pm</td>
-									<td class='linked' test-id='294'>
-										Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page
-										<div class="">
-											<span class="badge badge-default">Verify Policy Module Features.Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:29:30 pm</td>
-									<td class='linked' test-id='304'>
-										Respected policy information should displays by clicking on individual policy number on manage policy page
-										<div class="">
-											<span class="badge badge-default">Verify Policy Module Features.Respected policy information should displays by clicking on individual policy number on manage policy page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:30:09 pm</td>
-									<td class='linked' test-id='315'>
-										Verify that the user can download the client's policy letter
-										<div class="">
-											<span class="badge badge-default">Verify Policy Module Features.Verify that the user can download the client's policy letter</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:30:41 pm</td>
-									<td class='linked' test-id='329'>
-										Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:30:56 pm</td>
-									<td class='linked' test-id='339'>
-										To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:31:11 pm</td>
-									<td class='linked' test-id='349'>
-										One can redirect to add quote page by clicking add quote button on top right corner of manage quote
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.One can redirect to add quote page by clicking add quote button on top right corner of manage quote</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:31:27 pm</td>
-									<td class='linked' test-id='360'>
-										Data under total and monthly premium column should prefixed by £ sign
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Data under total and monthly premium column should prefixed by £ sign</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="fail">
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>16:31:47 pm</td>
-									<td class='linked' test-id='370'>
-										To check whether user will able able to redirect and see data on microchip file upload  page after clicking on upload microchip button on manage quote page
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.To check whether user will able able to redirect and see data on microchip file upload  page after clicking on upload microchip button on manage quote page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:32:00 pm</td>
-									<td class='linked' test-id='381'>
-										On the Add Quote page, verify that the Product dropdown appears with list of products
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.On the Add Quote page, verify that the Product dropdown appears with list of products</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:32:24 pm</td>
-									<td class='linked' test-id='392'>
-										Respected quote information page will be displayed upon clicking quote number on manage quote page
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Respected quote information page will be displayed upon clicking quote number on manage quote page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:34:52 pm</td>
-									<td class='linked' test-id='451'>
-										All hyperlinks with icons on setting page should work
-										<div class="">
-											<span class="badge badge-default">Verify Report Module Features.All hyperlinks with icons on setting page should work</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:35:08 pm</td>
-									<td class='linked' test-id='461'>
-										User will able to redirect on respected report page by clicking on report icon on report page
-										<div class="">
-											<span class="badge badge-default">Verify Report Module Features.User will able to redirect on respected report page by clicking on report icon on report page</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:35:24 pm</td>
-									<td class='linked' test-id='473'>
-										All hyperlinks with icons on setting page should work
-										<div class="">
-											<span class="badge badge-default">Verify Setting Module Features.All hyperlinks with icons on setting page should work</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:35:53 pm</td>
-									<td class='linked' test-id='485'>
-										User will redirect to manage task page after clicking on task icon on left tool bar
-										<div class="">
-											<span class="badge badge-default">Verify Task Module Features.User will redirect to manage task page after clicking on task icon on left tool bar</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:36:12 pm</td>
-									<td class='linked' test-id='496'>
-										To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page
-										<div class="">
-											<span class="badge badge-default">Verify Task Module Features.To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">@Stage</p>
-							<p class="duration text-sm">9 tests</p>
-							<span class="datetime">
-							<span class='badge badge-success'>8</span>
+							<span class='badge badge-success'>39</span>
 							<span class='badge badge-danger'>1</span>
 							
 							
@@ -3761,8 +3047,8 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>@Stage</h4>
-							<span status="pass" class='badge badge-success'>8 passed</span>
+							<h4>@Sanity</h4>
+							<span status="pass" class='badge badge-success'>39 passed</span>
 							<span status="fail" class='badge badge-danger'>1 failed</span>
 							
 							
@@ -3782,7 +3068,91 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:21:32 pm</td>
+									<td>11:32:59 am</td>
+									<td class='linked' test-id='2'>
+										All hyperlinks with icons on account page should work
+										<div class="">
+											<span class="badge badge-default">Verify Account Module Functionalities.All hyperlinks with icons on account page should work</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:34:36 am</td>
+									<td class='linked' test-id='14'>
+										Check Letter information  on manage letter page
+										<div class="">
+											<span class="badge badge-default">Verify Admin Module Features.Check Letter information  on manage letter page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:34:58 am</td>
+									<td class='linked' test-id='25'>
+										To check Edit Letter Template page should open with the template data in editable format.
+										<div class="">
+											<span class="badge badge-default">Verify Admin Module Features.To check Edit Letter Template page should open with the template data in editable format.</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:35:23 am</td>
+									<td class='linked' test-id='38'>
+										Verify that the Administration page displays with a set of icons and corresponding page should  opens on clicking individual icon.
+										<div class="">
+											<span class="badge badge-default">Verify Admin Module Features.Verify that the Administration page displays with a set of icons and corresponding page should  opens on clicking individual icon.</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>11:36:04 am</td>
+									<td class='linked' test-id='49'>
+										Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page
+										<div class="">
+											<span class="badge badge-default">V Verify Approve Claim  Module Features.Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:36:25 am</td>
+									<td class='linked' test-id='61'>
+										Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
+										<div class="">
+											<span class="badge badge-default">Verify Client Module Features.Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:36:41 am</td>
 									<td class='linked' test-id='71'>
 										Filter list of client based on active status dropdown option on manage client page
 										<div class="">
@@ -3796,11 +3166,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:21:52 pm</td>
+									<td>11:37:03 am</td>
 									<td class='linked' test-id='84'>
-										Verify add contact feature of client
+										To check whether add quote page is displays for same user by clicking on add button on view client page
 										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add contact feature of client</span>
+											<span class="badge badge-default">Verify Client Module Features.To check whether add quote page is displays for same user by clicking on add button on view client page</span>
 										</div>
 									</td>
 								</tr>
@@ -3810,11 +3180,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:22:17 pm</td>
+									<td>11:37:27 am</td>
 									<td class='linked' test-id='97'>
-										Verify add notes feature of client
+										Verify Client,Quote,Policy,Claim details on dash board page
 										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add notes feature of client</span>
+											<span class="badge badge-default">Verify DashBoard Items.Verify Client,Quote,Policy,Claim details on dash board page</span>
 										</div>
 									</td>
 								</tr>
@@ -3824,25 +3194,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:22:46 pm</td>
-									<td class='linked' test-id='110'>
-										Verify add task feature of client
+									<td>11:37:44 am</td>
+									<td class='linked' test-id='107'>
+										Check displayed text on homepage
 										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add task feature of client</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="fail">
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>16:23:32 pm</td>
-									<td class='linked' test-id='123'>
-										To verify edit client functionality for existing client
-										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.To verify edit client functionality for existing client</span>
+											<span class="badge badge-default">Launched Page Verification by displayed text.Check displayed text on homepage</span>
 										</div>
 									</td>
 								</tr>
@@ -3852,11 +3208,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:33:35 pm</td>
-									<td class='linked' test-id='403'>
-										Items on manage quote page displays upon item select from quote status dropdown
+									<td>11:37:49 am</td>
+									<td class='linked' test-id='117'>
+										Verify log out feature of system
 										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Items on manage quote page displays upon item select from quote status dropdown</span>
+											<span class="badge badge-default">Verify Log out functionality.Verify log out feature of system</span>
 										</div>
 									</td>
 								</tr>
@@ -3866,8 +3222,246 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:33:54 pm</td>
-									<td class='linked' test-id='414'>
+									<td>11:38:08 am</td>
+									<td class='linked' test-id='128'>
+										Verify Login event
+										<div class="">
+											<span class="badge badge-default">Login To Admin Panel.Verify Login event</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:38:27 am</td>
+									<td class='linked' test-id='139'>
+										User will redirect to manage claims page after clicking on manage claim icon on left tool bar
+										<div class="">
+											<span class="badge badge-default">Verify Manage Claim Module Features.User will redirect to manage claims page after clicking on manage claim icon on left tool bar</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:38:47 am</td>
+									<td class='linked' test-id='149'>
+										All data under date column displays with dd-mm-yyyy format and data under amount should prefixed by £ sign on manage claim page
+										<div class="">
+											<span class="badge badge-default">Verify Manage Claim Module Features.All data under date column displays with dd-mm-yyyy format and data under amount should prefixed by £ sign on manage claim page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:39:07 am</td>
+									<td class='linked' test-id='160'>
+										User will redirect to respected claim information page by clicking on claim number link on manage claim page
+										<div class="">
+											<span class="badge badge-default">Verify Manage Claim Module Features.User will redirect to respected claim information page by clicking on claim number link on manage claim page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:39:41 am</td>
+									<td class='linked' test-id='171'>
+										Add claim page displays all dropdowns with valid items and date appears with calender icon
+										<div class="">
+											<span class="badge badge-default">Verify Manage Claim Module Features.Add claim page displays all dropdowns with valid items and date appears with calender icon</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:40:28 am</td>
+									<td class='linked' test-id='183'>
+										Treatment status should reflect upon option selected from treatment status drop down on manage claim page
+										<div class="">
+											<span class="badge badge-default">Verify Manage Claim Module Features.Treatment status should reflect upon option selected from treatment status drop down on manage claim page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:41:01 am</td>
+									<td class='linked' test-id='195'>
+										List of policies should display by clicking on policy icon on left tool bar
+										<div class="">
+											<span class="badge badge-default">Verify Policy Module Features.List of policies should display by clicking on policy icon on left tool bar</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:41:22 am</td>
+									<td class='linked' test-id='205'>
+										Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page
+										<div class="">
+											<span class="badge badge-default">Verify Policy Module Features.Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:41:40 am</td>
+									<td class='linked' test-id='215'>
+										Respected policy information should displays by clicking on individual policy number on manage policy page
+										<div class="">
+											<span class="badge badge-default">Verify Policy Module Features.Respected policy information should displays by clicking on individual policy number on manage policy page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:42:22 am</td>
+									<td class='linked' test-id='226'>
+										Verify that the user can download the client's policy letter
+										<div class="">
+											<span class="badge badge-default">Verify Policy Module Features.Verify that the user can download the client's policy letter</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:42:57 am</td>
+									<td class='linked' test-id='239'>
+										Check appropriate policy data should displays against option selected from status drop down on manage policy page
+										<div class="">
+											<span class="badge badge-default">Verify Policy Module Features.Check appropriate policy data should displays against option selected from status drop down on manage policy page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:43:24 am</td>
+									<td class='linked' test-id='251'>
+										Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:43:41 am</td>
+									<td class='linked' test-id='261'>
+										To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:44:01 am</td>
+									<td class='linked' test-id='271'>
+										One can redirect to add quote page by clicking add quote button on top right corner of manage quote
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.One can redirect to add quote page by clicking add quote button on top right corner of manage quote</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:44:25 am</td>
+									<td class='linked' test-id='282'>
+										Data under total and monthly premium column should prefixed by £ sign
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.Data under total and monthly premium column should prefixed by £ sign</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:44:47 am</td>
+									<td class='linked' test-id='292'>
+										On the Add Quote page, verify that the Product dropdown appears with list of products
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.On the Add Quote page, verify that the Product dropdown appears with list of products</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:45:13 am</td>
+									<td class='linked' test-id='303'>
+										Respected quote information page will be displayed upon clicking quote number on manage quote page
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.Respected quote information page will be displayed upon clicking quote number on manage quote page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:46:40 am</td>
+									<td class='linked' test-id='314'>
 										Fetch list of quote based on product option from product dropdown on manage quote page
 										<div class="">
 											<span class="badge badge-default">Verify Quote Module Features.Fetch list of quote based on product option from product dropdown on manage quote page</span>
@@ -3880,11 +3474,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:34:17 pm</td>
-									<td class='linked' test-id='426'>
-										Fetch quotation based on quote number on manage quote page
+									<td>11:47:23 am</td>
+									<td class='linked' test-id='338'>
+										Verify include payment feature of quote module
 										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Fetch quotation based on quote number on manage quote page</span>
+											<span class="badge badge-default">Verify Quote Module Features.Verify include payment feature of quote module</span>
 										</div>
 									</td>
 								</tr>
@@ -3894,11 +3488,137 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:34:33 pm</td>
-									<td class='linked' test-id='438'>
-										Verify include payment feature of quote module
+									<td>11:48:06 am</td>
+									<td class='linked' test-id='364'>
+										All hyperlinks with icons on setting page should work
 										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Verify include payment feature of quote module</span>
+											<span class="badge badge-default">Verify Report Module Features.All hyperlinks with icons on setting page should work</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:48:22 am</td>
+									<td class='linked' test-id='374'>
+										User will able to redirect on respected report page by clicking on report icon on report page
+										<div class="">
+											<span class="badge badge-default">Verify Report Module Features.User will able to redirect on respected report page by clicking on report icon on report page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:49:57 am</td>
+									<td class='linked' test-id='386'>
+										All hyperlinks with icons on setting page should work
+										<div class="">
+											<span class="badge badge-default">Verify Setting Module Features.All hyperlinks with icons on setting page should work</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:51:13 am</td>
+									<td class='linked' test-id='398'>
+										User will redirect to manage task page after clicking on task icon on left tool bar
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.User will redirect to manage task page after clicking on task icon on left tool bar</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:51:28 am</td>
+									<td class='linked' test-id='409'>
+										To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:51:47 am</td>
+									<td class='linked' test-id='421'>
+										Appropriate data should display upon selecting an option from the status drop down on managing task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.Appropriate data should display upon selecting an option from the status drop down on managing task page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:52:06 am</td>
+									<td class='linked' test-id='432'>
+										Appropriate data should display upon selecting an option from the priority drop down on managing task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.Appropriate data should display upon selecting an option from the priority drop down on managing task page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:52:25 am</td>
+									<td class='linked' test-id='443'>
+										Appropriate data should display upon selecting an option from the type drop down on managing task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.Appropriate data should display upon selecting an option from the type drop down on managing task page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:52:46 am</td>
+									<td class='linked' test-id='454'>
+										Appropriate data should display upon selecting an option from the client drop down on managing task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.Appropriate data should display upon selecting an option from the client drop down on managing task page</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:53:05 am</td>
+									<td class='linked' test-id='465'>
+										To check task details should open after clicking on task title on manage task page
+										<div class="">
+											<span class="badge badge-default">Verify Task Module Features.To check task details should open after clicking on task title on manage task page</span>
 										</div>
 									</td>
 								</tr>
@@ -3909,11 +3629,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">@Production</p>
-							<p class="duration text-sm">7 tests</p>
+							<p class="name">@Stage</p>
+							<p class="duration text-sm">2 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>7</span>
-							
+							<span class='badge badge-success'>1</span>
+							<span class='badge badge-danger'>1</span>
 							
 							
 							</span>
@@ -3921,9 +3641,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>@Production</h4>
-							<span status="pass" class='badge badge-success'>7 passed</span>
-							
+							<h4>@Stage</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
+							<span status="fail" class='badge badge-danger'>1 failed</span>
 							
 							
 						</div>
@@ -3942,95 +3662,25 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>16:21:32 pm</td>
-									<td class='linked' test-id='71'>
-										Filter list of client based on active status dropdown option on manage client page
+									<td>11:47:01 am</td>
+									<td class='linked' test-id='326'>
+										Fetch quotation based on quote number on manage quote page
 										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Filter list of client based on active status dropdown option on manage client page</span>
+											<span class="badge badge-default">Verify Quote Module Features.Fetch quotation based on quote number on manage quote page</span>
 										</div>
 									</td>
 								</tr>
-								<tr class="tag-test-status" status="pass">
+								<tr class="tag-test-status" status="fail">
 									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>16:23:55 pm</td>
-									<td class='linked' test-id='136'>
-										Verify add primary contact feature of client on production
+									<td>11:47:47 am</td>
+									<td class='linked' test-id='350'>
+										Edit quote details and verifies the same
 										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add primary contact feature of client on production</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:24:35 pm</td>
-									<td class='linked' test-id='151'>
-										Verify add notes feature of client on production environment
-										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add notes feature of client on production environment</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:25:11 pm</td>
-									<td class='linked' test-id='166'>
-										Verify add task feature of client on production environment
-										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.Verify add task feature of client on production environment</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:25:53 pm</td>
-									<td class='linked' test-id='181'>
-										To verify edit client functionality for existing client on production environment
-										<div class="">
-											<span class="badge badge-default">Verify Client Module Features.To verify edit client functionality for existing client on production environment</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:33:35 pm</td>
-									<td class='linked' test-id='403'>
-										Items on manage quote page displays upon item select from quote status dropdown
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Items on manage quote page displays upon item select from quote status dropdown</span>
-										</div>
-									</td>
-								</tr>
-								<tr class="tag-test-status" status="pass">
-									<td>
-										<div class='status-avatar pass-bg'>
-											<i class="fa fa-check text-white"></i>
-										</div>
-									</td>
-									<td>16:33:54 pm</td>
-									<td class='linked' test-id='414'>
-										Fetch list of quote based on product option from product dropdown on manage quote page
-										<div class="">
-											<span class="badge badge-default">Verify Quote Module Features.Fetch list of quote based on product option from product dropdown on manage quote page</span>
+											<span class="badge badge-default">Verify Quote Module Features.Edit quote details and verifies the same</span>
 										</div>
 									</td>
 								</tr>
@@ -4078,13 +3728,13 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+							<p class="name">java.lang.AssertionError</p>
 							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+							<h4>java.lang.AssertionError</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -4101,11 +3751,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>16:19:02 pm</td>
-									<td class='linked' test-id='8'>
-										When User clicks on icon
+									<td>11:36:20 am</td>
+									<td class='linked' test-id='56'>
+										And User will able to see data on approve claims page
 										<div class="">
-											<span class="badge badge-default">All hyperlinks with icons on account page should work</span>
+											<span class="badge badge-default">Verify that the Approve Claim page displays with data in the table after clicking on approve claim icon on dashboard page</span>
 										</div>
 									</td>
 								</tr>
@@ -4117,7 +3767,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">org.openqa.selenium.NoSuchElementException</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -4139,25 +3789,11 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>16:23:50 pm</td>
-									<td class='linked' test-id='131'>
-										And User enters all details of client on edit client window
+									<td>11:48:02 am</td>
+									<td class='linked' test-id='358'>
+										And User selects edit quote option from cog icon on quote information page
 										<div class="">
-											<span class="badge badge-default">To verify edit client functionality for existing client</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>16:31:57 pm</td>
-									<td class='linked' test-id='376'>
-										When User clicks on upload microchip file button
-										<div class="">
-											<span class="badge badge-default">To check whether user will able able to redirect and see data on microchip file upload  page after clicking on upload microchip button on manage quote page</span>
+											<span class="badge badge-default">Edit quote details and verifies the same</span>
 										</div>
 									</td>
 								</tr>
@@ -4196,12 +3832,12 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='78.571%'>
-						<b>11</b> features passed
+					<div><small data-tooltip='85.714%'>
+						<b>12</b> features passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='21.429%'><b>3</b> features failed, 
+						<small data-tooltip='14.286%'><b>2</b> features failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -4219,9 +3855,9 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='93.023%'><b>40</b> scenarios passed</small></div>
+					<div><small data-tooltip='95.238%'><b>40</b> scenarios passed</small></div>
 					<div>
-						<small data-tooltip='6.977%'><b>3</b> scenarios failed, 
+						<small data-tooltip='4.762%'><b>2</b> scenarios failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -4239,10 +3875,10 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='97.865%'><b>275</b> steps passed</small></div>
+					<div><small data-tooltip='98.814%'><b>250</b> steps passed</small></div>
 					<div>
-						<small data-tooltip='1.068%'><b>3</b> steps failed, 
-						<b>3</b> skipped, <b data-tooltip='1.068%'>0</b> others
+						<small data-tooltip='0.791%'><b>2</b> steps failed, 
+						<b>1</b> skipped, <b data-tooltip='0.395%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -4259,7 +3895,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 							<h2 class="font-size-28 font-weight-light mt-3">14</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>78.57%</span>
+							<span>85.71%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -4275,10 +3911,10 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Scenarios</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">43</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">42</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>93.02%</span>
+							<span>95.24%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -4294,7 +3930,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jun 6, 2023 04:18:43 pm</h4>
+							<h4 class="font-weight-light mt-4">Jun 19, 2023 11:32:53 am</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -4310,7 +3946,7 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 17m 42s+206ms</h4>
+							<h4 class="font-weight-light mt-4">0h 20m 25s+258ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -4356,32 +3992,22 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 						<tbody>
 							<tr>
 								<td>@Sanity</td>
-								<td>28</td>
-								<td>2</td>
-								<td>0</td>
-								<td>0</td>
-								<td>
-									93.333%
-								</td>
-							</tr>
-							<tr>
-								<td>@Stage</td>
-								<td>8</td>
+								<td>39</td>
 								<td>1</td>
 								<td>0</td>
 								<td>0</td>
 								<td>
-									88.889%
+									97.5%
 								</td>
 							</tr>
 							<tr>
-								<td>@Production</td>
-								<td>7</td>
-								<td>0</td>
+								<td>@Stage</td>
+								<td>1</td>
+								<td>1</td>
 								<td>0</td>
 								<td>0</td>
 								<td>
-									100%
+									50%
 								</td>
 							</tr>
 						</tbody>
@@ -4433,48 +4059,48 @@ Session ID: 1cd14ff929487d907439a27faf7727f6
 <script>
 	var statusGroup = {
 	    parentCount: 14,
-		passParent: 11,
-		failParent: 3,
+		passParent: 12,
+		failParent: 2,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 3,
-		childCount: 43,
+		exceptionsParent: 2,
+		childCount: 42,
 		passChild: 40,
-		failChild: 3,
+		failChild: 2,
 		fatalChild: 0,
 		errorChild: 0,
 		warningChild: 0,
 		skipChild: 0,
 		infoChild: 0,
 		debugChild: 0,
-		exceptionsChild: 3,
-		grandChildCount: 281,
-		passGrandChild: 275,
-		failGrandChild: 3,
+		exceptionsChild: 2,
+		grandChildCount: 253,
+		passGrandChild: 250,
+		failGrandChild: 2,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
-		skipGrandChild: 3,
+		skipGrandChild: 1,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 6,
-		eventsCount: 281,
-		passEvents: 229,
-		failEvents: 3,
+		exceptionsGrandChild: 3,
+		eventsCount: 253,
+		passEvents: 206,
+		failEvents: 2,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 3,
-		infoEvents: 46,
+		skipEvents: 1,
+		infoEvents: 44,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "Verify Account Module Functionalities":52.147,"Verify Admin Module Features":66.276,"V Verify Approve Claim  Module Features":15.411,"Verify Client Module Features":317.691,"Verify DashBoard Items":9.121,"Launched Page Verification by displayed text":1.454,"Verify Log out functionality":11.339,"Login To Admin Panel":14.181,"Verify Manage Claim Module Features":87.796,"Verify Policy Module Features":96.543,"Verify Quote Module Features":247.506,"Verify Report Module Features":27.355,"Verify Setting Module Features":24.687,"Verify Task Module Features":32.915
+	        "Verify Account Module Functionalities":91.696,"Verify Admin Module Features":82.858,"V Verify Approve Claim  Module Features":15.629,"Verify Client Module Features":58.65,"Verify DashBoard Items":12.008,"Launched Page Verification by displayed text":1.523,"Verify Log out functionality":14.398,"Login To Admin Panel":13.786,"Verify Manage Claim Module Features":144.087,"Verify Policy Module Features":139.019,"Verify Quote Module Features":278.514,"Verify Report Module Features":106.538,"Verify Setting Module Features":71.099,"Verify Task Module Features":125.11
 	};
 </script>
                 </div>

@@ -25,6 +25,7 @@ Feature: Verify Policy Module Features
     And User clicks on download icon
     Then User will able to see downloaded policy page
 
-#  Scenario: Check appropriate policy data should displays against option selected from status drop down on manage policy page
-#    When User selects any options from status dropdown
-#    Then Appropriate data displays on manage policy page depend on drop down option
+  @Sanity
+  Scenario: Check appropriate policy data should displays against option selected from status drop down on manage policy page
+    When User selects any options from status dropdown
+    Then Appropriate data displays on manage policy page depend on drop down option
