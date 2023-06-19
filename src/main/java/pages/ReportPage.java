@@ -323,128 +323,128 @@ public class ReportPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElement(reportIcon).click();
-
-
-        //Trust Summary
-        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).isEnabled()) {
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).click();
-        } else {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).click();
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(driver.getCurrentUrl());
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(reportIcon).click();
-
-
-        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).isEnabled()) {
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).click();
-        } else {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).click();
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(driver.getCurrentUrl());
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(reportIcon).click();
-
-
-        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).isEnabled()) {
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).click();
-        } else {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).click();
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(driver.getCurrentUrl());
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(reportIcon).click();
-
-
-        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).isEnabled()) {
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).click();
-        } else {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).click();
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(driver.getCurrentUrl());
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        //From here make comment
-        driver.findElement(reportIcon).click();
-
-
-        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).isEnabled()) {
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).click();
-        } else {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).click();
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(driver.getCurrentUrl());
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        driver.findElement(reportIcon).click();
+//
+//
+//        //Trust Summary
+//        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).isEnabled()) {
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).click();
+//        } else {
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[1]")).click();
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        System.out.println(driver.getCurrentUrl());
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        driver.findElement(reportIcon).click();
+//
+//
+//        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).isEnabled()) {
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).click();
+//        } else {
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[2]")).click();
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        System.out.println(driver.getCurrentUrl());
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        driver.findElement(reportIcon).click();
+//
+//
+//        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).isEnabled()) {
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).click();
+//        } else {
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[3]")).click();
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        System.out.println(driver.getCurrentUrl());
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        driver.findElement(reportIcon).click();
+//
+//
+//        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).isEnabled()) {
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).click();
+//        } else {
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[4]")).click();
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        System.out.println(driver.getCurrentUrl());
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        //From here make comment
+//        driver.findElement(reportIcon).click();
+//
+//
+//        if (driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).isEnabled()) {
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).click();
+//        } else {
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            driver.findElement(By.xpath("//div[@class='ibox']/div[3]/div[1]/div/div[2]/a[5]")).click();
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        System.out.println(driver.getCurrentUrl());
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
 
     }
 
