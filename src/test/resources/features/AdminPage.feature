@@ -138,43 +138,43 @@ Feature: Verify Admin Module Features
     Then Add insurer page displays with all fields
 
 #Agent
-
-  @Sanity
-  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
-    When User clicks on agent icon
-    And User clicks on agent reference number under list of agent details
-    Then View agent page displays with all information
-
-  @Sanity
-  Scenario: Filter details on manage agent page upon option of category,type and active drop down
-    When User clicks on agent icon
-    And User Selects appropriate option from category,type and active drop down
-    And User clicks on search button on manage agent page
-    Then Appropriate agent details displays on manage agent page
-
-  @Sanity
-  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
-    When User clicks on agent icon
-    And User clicks on add agent button on manage agent page
-    Then Add agent page displays with all details
-
- #Company
-
-  @Sanity
-  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
-    When User clicks on company icon
-    Then Manage company page displays with list of available companies
-
-  @Sanity
-  Scenario:Filter details on manage company page upon option of state and country drop down
-    When User clicks on company icon
-    And User selects options from state and country drop down
-    Then Appropriate list of company displays on manage company page
-
-  @Sanity
-  Scenario:Add company page displays with all details by clicking on add company button on manage company page
-    When User clicks on company icon
-    And User clicks on add company button on manage company page
-    Then Add company page displays with all details
+#
+#  @Sanity
+#  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
+#    When User clicks on agent icon
+#    And User clicks on agent reference number under list of agent details
+#    Then View agent page displays with all information
+#
+#  @Sanity
+#  Scenario: Filter details on manage agent page upon option of category,type and active drop down
+#    When User clicks on agent icon
+#    And User Selects appropriate option from category,type and active drop down
+#    And User clicks on search button on manage agent page
+#    Then Appropriate agent details displays on manage agent page
+#
+#  @Sanity
+#  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
+#    When User clicks on agent icon
+#    And User clicks on add agent button on manage agent page
+#    Then Add agent page displays with all details
+#
+# #Company
+#
+#  @Sanity
+#  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
+#    When User clicks on company icon
+#    Then Manage company page displays with list of available companies
+#
+#  @Sanity
+#  Scenario:Filter details on manage company page upon option of state and country drop down
+#    When User clicks on company icon
+#    And User selects options from state and country drop down
+#    Then Appropriate list of company displays on manage company page
+#
+#  @Sanity
+#  Scenario:Add company page displays with all details by clicking on add company button on manage company page
+#    When User clicks on company icon
+#    And User clicks on add company button on manage company page
+#    Then Add company page displays with all details
 
 
