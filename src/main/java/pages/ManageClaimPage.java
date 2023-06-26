@@ -121,7 +121,7 @@ public class ManageClaimPage {
             System.out.println(cEle.getText());
             cEle.click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -141,7 +141,7 @@ public class ManageClaimPage {
 
     public String verifyClaimInfoPageText() {
         try {
-            Thread.sleep(5);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

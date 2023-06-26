@@ -21,6 +21,11 @@ public class LogOutPage  {
 
     //Methods
     public void clickOnLogOutButton(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
        driver.findElement(logOutIcon).click();
     }
     public String verifyLogInPage()

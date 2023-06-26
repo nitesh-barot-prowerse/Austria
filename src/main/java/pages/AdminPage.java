@@ -200,7 +200,7 @@ public class AdminPage {
     public void clickAdminIcon() {
         driver.findElement(adminIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -208,6 +208,11 @@ public class AdminPage {
 
     public void clickOnLetterIcon() {
         driver.findElement(letterIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
@@ -229,18 +234,13 @@ public class AdminPage {
             break;
         }
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
 
     public String displayedMessage() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return driver.findElement(displayMessage).getText();
 
     }
@@ -282,7 +282,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[1]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -297,7 +297,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[2]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -311,7 +311,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[3]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -325,7 +325,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[4]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -339,7 +339,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[6]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -353,7 +353,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[7]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -367,7 +367,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[8]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -381,7 +381,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[9]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -396,7 +396,7 @@ public class AdminPage {
         } else {
             driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[10]/a")).click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -416,7 +416,7 @@ public class AdminPage {
         driver.findElement(productIcon).click();
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -429,7 +429,7 @@ public class AdminPage {
         for (WebElement pCode : productCode) {
             pCode.click();
             try {
-                Thread.sleep(2000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -510,6 +510,11 @@ public class AdminPage {
 
     public void clickDepartmentIcon() {
         driver.findElement(departmentIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void enterDepartmentInSearch() {
@@ -519,7 +524,7 @@ public class AdminPage {
     public void clickSearchButton() {
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -540,7 +545,7 @@ public class AdminPage {
     {
         driver.findElement(addDepartmentIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -554,7 +559,7 @@ public class AdminPage {
     public void clickOnEditDepartmentIcon(){
         driver.findElement(editDepartmentIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -594,7 +599,7 @@ public class AdminPage {
         driver.findElement(optionOfActiveDropDownOnStaffPage).click();
         driver.findElement(searchButtonOnStaffPage).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -632,7 +637,7 @@ public class AdminPage {
     public void clickOnEditStaffIcon(){
         driver.findElement(editStaffIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -719,7 +724,7 @@ public class AdminPage {
     public void clickOnAddBankAccountIcon() {
         driver.findElement(addBankAccountIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -739,7 +744,7 @@ public class AdminPage {
         }
         driver.findElement(editIconAgainstInsurer).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -855,7 +860,7 @@ public class AdminPage {
         }
         driver.findElement(searchButtonOnManageInsurerPage).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -896,7 +901,7 @@ public class AdminPage {
         WebElement editInsurerIcon = driver.findElement(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[14]/div/a[1]"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editInsurerIcon);
         try {
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -977,7 +982,7 @@ public class AdminPage {
     public void clickOnButtonOnManageAgentPage(){
         driver.findElement(searchButtonOnManageAgentPage).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -1054,7 +1059,7 @@ public class AdminPage {
         driver.findElement(optionFromCountryDropDownOnManageCompanyPage).click();
         driver.findElement(searchButtonOnManageCompanyPage).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

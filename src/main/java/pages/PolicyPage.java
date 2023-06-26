@@ -39,7 +39,7 @@ public class PolicyPage {
     public void clickPolicyIcon() {
         driver.findElement(policyIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -88,7 +88,7 @@ public class PolicyPage {
         for (WebElement cEle : totalColumn) {
             cEle.click();
             try {
-                Thread.sleep(2000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -118,7 +118,7 @@ public class PolicyPage {
         for (WebElement cEle : totalColumn) {
             cEle.click();
             try {
-                Thread.sleep(2000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -135,13 +135,13 @@ public class PolicyPage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,350)", "");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(letterIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

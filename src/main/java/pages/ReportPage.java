@@ -43,6 +43,11 @@ public class ReportPage {
 
     public void clickOnReportIcon() {
         driver.findElement(reportIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

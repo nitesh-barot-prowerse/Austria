@@ -30,6 +30,11 @@ public class AccountPage {
 
     public void clickOnAccountIcon() {
         driver.findElement(accountIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void traversingThroughPages() {
