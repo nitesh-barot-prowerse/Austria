@@ -10,7 +10,7 @@ Feature: Verify Manage Claim Module Features
     Then User will able see all data available on manage claim page
 
   @Sanity
-  Scenario: All data under date column displays with dd-mm-yyyy format and data under amount should prefixed by £ sign on manage claim page
+  Scenario: All data under date column displays with dd-mm-yyyy format and data under amount should post fixed by £ sign on manage claim page
     Then All data under treatment and cliam first advised date column displays in dd-mm-yyyy format
     Then  All data under Amount paybale column post fixed  by € sign
 
