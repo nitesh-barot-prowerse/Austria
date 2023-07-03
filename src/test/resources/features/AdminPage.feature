@@ -42,7 +42,7 @@ Feature: Verify Admin Module Features
     Then Agent configuration displays with all details
 
  #DepartMent
-  #do not use for production
+#  do not use for production
 #  Scenario: Filter data on manage department page upon entering respective department value in search box
 #    When User clicks on department icon on administrator page
 #    When User enters department value in to search input on manage department page
@@ -61,7 +61,7 @@ Feature: Verify Admin Module Features
     And User clicks on edit icon against department name on manage department page
     Then Edit department page displays in editable format
 
- # Staff
+# # Staff
 
   Scenario:Filter data of staff details upon department and active drop down options on manage staff  page
     When User clicks on staff icon on administrator page
@@ -138,43 +138,43 @@ Feature: Verify Admin Module Features
     Then Add insurer page displays with all fields
 
 #Agent
-#
-#  @Sanity
-#  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
-#    When User clicks on agent icon
-#    And User clicks on agent reference number under list of agent details
-#    Then View agent page displays with all information
-#
-#  @Sanity
-#  Scenario: Filter details on manage agent page upon option of category,type and active drop down
-#    When User clicks on agent icon
-#    And User Selects appropriate option from category,type and active drop down
-#    And User clicks on search button on manage agent page
-#    Then Appropriate agent details displays on manage agent page
-#
-#  @Sanity
-#  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
-#    When User clicks on agent icon
-#    And User clicks on add agent button on manage agent page
-#    Then Add agent page displays with all details
-#
-# #Company
-#
-#  @Sanity
-#  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
-#    When User clicks on company icon
-#    Then Manage company page displays with list of available companies
-#
-#  @Sanity
-#  Scenario:Filter details on manage company page upon option of state and country drop down
-#    When User clicks on company icon
-#    And User selects options from state and country drop down
-#    Then Appropriate list of company displays on manage company page
-#
-#  @Sanity
-#  Scenario:Add company page displays with all details by clicking on add company button on manage company page
-#    When User clicks on company icon
-#    And User clicks on add company button on manage company page
-#    Then Add company page displays with all details
+
+  @Sanity
+  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
+    When User clicks on agent icon
+    And User clicks on agent reference number under list of agent details
+    Then View agent page displays with all information
+
+  @Sanity
+  Scenario: Filter details on manage agent page upon option of category,type and active drop down
+    When User clicks on agent icon
+    And User Selects appropriate option from category,type and active drop down
+    And User clicks on search button on manage agent page
+    Then Appropriate agent details displays on manage agent page
+
+  @Sanity
+  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
+    When User clicks on agent icon
+    And User clicks on add agent button on manage agent page
+    Then Add agent page displays with all details
+
+ #Company
+
+  @Sanity
+  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
+    When User clicks on company icon
+    Then Manage company page displays with list of available companies
+
+  @Sanity
+  Scenario:Filter details on manage company page upon option of state and country drop down
+    When User clicks on company icon
+    And User selects options from state and country drop down
+    Then Appropriate list of company displays on manage company page
+
+  @Sanity
+  Scenario:Add company page displays with all details by clicking on add company button on manage company page
+    When User clicks on company icon
+    And User clicks on add company button on manage company page
+    Then Add company page displays with all details
 
 
