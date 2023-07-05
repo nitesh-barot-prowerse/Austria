@@ -8,7 +8,7 @@ public class Constant {
     public static String url;
     static {
         if(ENVIRONMENT.equals("AustriaStage")){
-            url="http://52.32.106.250:9999/";
+            url="https://stage.petcovergroup.com:9999/";
         } else if (ENVIRONMENT.equals("AustriaProduction")) {
             url="https://fitlocal.petcover.at:91/";
         }
