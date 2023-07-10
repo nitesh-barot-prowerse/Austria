@@ -421,5 +421,244 @@ public class SettingPageSteps {
         Assert.assertEquals(editRenewTypePage, "Edit Renewal Type");
     }
 
+    //To verify whether Manage task type page displays with task type details by clicking on task type icon on setting page
+
+    @When("User clicks on task type icon on setting page")
+    public void user_clicks_on_task_type_icon_on_setting_page() {
+        settingPage.clickOnTaskTypeIcon();
+    }
+
+    @Then("Manage task type page displays with all task details")
+    public void manage_task_type_page_displays_with_all_task_details() {
+        String taskTypeDetails = settingPage.verifyManageTaskTypePage();
+        if (taskTypeDetails.length() > 0) {
+            System.out.println(taskTypeDetails);
+        } else {
+            System.out.println("Task Type Page of pet displays with no data");
+        }
+    }
+
+    //Add task type page displays will all details when user clicks on add task type icon on manage task type  page
+
+    @When("User clicks on add task type icon on manage task type page")
+    public void user_clicks_on_add_task_type_icon_on_manage_task_type_page() {
+        settingPage.clickOnAddTaskTypeIcon();
+    }
+
+    @Then("Add task type page displays with all details")
+    public void add_task_type_page_displays_with_all_details() {
+        String addTaskTypePage = settingPage.verifyAddTaskTypePage();
+        Assert.assertEquals(addTaskTypePage, "Add Task Type");
+    }
+    //Edit task type page displays upon clicking on edit icon against task type  name on manage task type  page
+
+    @When("User clicks on edit icon against task type  name on manage task type  page")
+    public void user_clicks_on_edit_icon_against_task_type_name_on_manage_task_type_page() {
+        settingPage.clickOnEditIconOnManageTaskTypePage();
+    }
+
+    @Then("Edit task type page displays in editable format")
+    public void edit_task_type_page_displays_in_editable_format() {
+        String editTaskTypePage = settingPage.verifyEditTaskTypePage();
+        Assert.assertEquals(editTaskTypePage, "Edit Task Type");
+    }
+    //To verify whether Manage task status page displays with task status details by clicking on task status icon on setting page
+
+    @When("User clicks on task status icon on setting page")
+    public void user_clicks_on_task_status_icon_on_setting_page() {
+        settingPage.clickOnTaskStatusIcon();
+    }
+
+    @Then("Manage task status page displays with all task details")
+    public void manage_task_status_page_displays_with_all_task_details() {
+        String taskStatusDetails = settingPage.verifyManageTaskStatusPage();
+        if (taskStatusDetails.length() > 0) {
+            System.out.println(taskStatusDetails);
+        } else {
+            System.out.println("Task Status Page of pet displays with no data");
+        }
+    }
+
+    //Add task status page displays will all details when user clicks on add task status icon on manage task status  page
+
+    @When("User clicks on add task status icon on manage task status page")
+    public void user_clicks_on_add_task_status_icon_on_manage_task_status_page() {
+        settingPage.clickOnAddTaskStatusIcon();
+    }
+
+    @Then("Add task status page displays with all details")
+    public void add_task_status_page_displays_with_all_details() {
+        String addTaskStatusPage = settingPage.verifyAddTaskStatusPage();
+        Assert.assertEquals(addTaskStatusPage, "Add Task Status");
+    }
+
+    //Edit task status page displays upon clicking on edit icon against task status  name on manage task status  page
+
+    @When("User clicks on edit icon against task status  name on manage task status  page")
+    public void user_clicks_on_edit_icon_against_task_status_name_on_manage_task_status_page() {
+        settingPage.clickOnEditIconOnManageTaskStatusPage();
+    }
+
+    @Then("Edit task status page displays in editable format")
+    public void edit_task_status_page_displays_in_editable_format() {
+        String editTaskStatusPage = settingPage.verifyEditTaskStatusPage();
+        Assert.assertEquals(editTaskStatusPage, "Edit Task Status");
+    }
+    //To verify whether Manage Pet Breed page displays with Pet Breed details by clicking on Pet Breed icon on setting page
+
+    @When("User clicks on pet breed icon on setting page")
+    public void user_clicks_on_pet_breed_icon_on_setting_page() {
+        settingPage.clickOnPetBreedIcon();
+    }
+
+    @Then("Manage pet breed page displays with all task details")
+    public void manage_pet_breed_page_displays_with_all_task_details() {
+        String petBreedDetails = settingPage.verifyManagePetBreedPage();
+        if (petBreedDetails.length() > 0) {
+            System.out.println(petBreedDetails);
+        } else {
+            System.out.println("Task Status Page of pet displays with no data");
+        }
+    }
+
+    //Add Pet Breed page displays will all details when user clicks on add pet breed icon on manage pet breed  page
+
+    @When("User clicks on add pet breed icon on manage pet breed page")
+    public void user_clicks_on_add_pet_breed_icon_on_manage_pet_breed_page() {
+        settingPage.clickOnAddPetBreedIcon();
+    }
+
+    @Then("Add pet breed page displays with all details")
+    public void add_pet_breed_page_displays_with_all_details() {
+        String addPetBreedPage = settingPage.verifyAddPetBreedPage();
+        Assert.assertEquals(addPetBreedPage, "Add Pet Breed");
+    }
+
+    //Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
+
+    @When("User clicks on edit icon against pet breed  name on manage pet breed page")
+    public void user_clicks_on_edit_icon_against_pet_breed_name_on_manage_pet_breed_page() {
+        settingPage.clickOnEditIconOnManagePetBreedPage();
+    }
+
+    @Then("Edit pet breed page displays in editable format")
+    public void edit_pet_breed_page_displays_in_editable_format() {
+        String editPetBreedPage = settingPage.verifyEditPetBreedPage();
+        Assert.assertEquals(editPetBreedPage, "Edit Pet Breed");
+    }
+
+    //To verify whether Manage Exclusion page displays with exclusion details by clicking on exclusion icon on setting page
+
+    @When("User clicks on exclusion icon on setting page")
+    public void user_clicks_on_exclusion_icon_on_setting_page() {
+        settingPage.clickOnExclusionIcon();
+    }
+
+    @Then("Manage exclusion page displays with all task details")
+    public void manage_exclusion_page_displays_with_all_task_details() {
+
+        String exclusionDetails = settingPage.verifyManageExclusionPage();
+        if (exclusionDetails.length() > 0) {
+            System.out.println(exclusionDetails);
+        } else {
+            System.out.println("Exclusion Page of pet displays with no data");
+        }
+
+    }
+    //Add exclusion page displays will all details when user clicks on add exclusion icon on manage exclusion page
+
+    @When("User clicks on clicks on add exclusion icon on manage exclusion page")
+    public void user_clicks_on_clicks_on_add_exclusion_icon_on_manage_exclusion_page() {
+        settingPage.clickOnAddExclusionIcon();
+    }
+
+    @Then("Add exclusion page displays with all details")
+    public void add_exclusion_page_displays_with_all_details() {
+        String addExclusionPage = settingPage.verifyAddExclusionPage();
+        Assert.assertEquals(addExclusionPage, "Add Exclusion");
+    }
+
+    //Edit exclusion page displays upon clicking on edit icon against exclusion code on manage exclusion page
+
+    @When("User clicks on edit icon against exclusion code on manage exclusion page")
+    public void user_clicks_on_edit_icon_against_exclusion_code_on_manage_exclusion_page() {
+        settingPage.clickOnEditIconOnManageExclusionPage();
+    }
+
+    @Then("Edit exclusion page displays in editable format")
+    public void edit_exclusion_page_displays_in_editable_format() {
+        String editExclusionPage = settingPage.verifyEditExclusionPage();
+        Assert.assertEquals(editExclusionPage, "Edit Exclusion");
+    }
+
+    //To verify whether Manage regular vet displays with vet details by clicking on regular vet icon on setting page
+
+    @When("User clicks on regular vet icon on setting page")
+    public void user_clicks_on_regular_vet_icon_on_setting_page() {
+        settingPage.clickOnRegularVetIcon();
+    }
+
+    @Then("Manage regular vet displays with all task details")
+    public void manage_regular_vet_displays_with_all_task_details() {
+        String regularVetDetails = settingPage.verifyManageRegularVetPage();
+        if (regularVetDetails.length() > 0) {
+            System.out.println(regularVetDetails);
+        } else {
+            System.out.println("Regular vet Page of pet displays with no data");
+        }
+    }
+
+    //Add regular vet page displays will all details when user clicks on add regular vet icon on manage regular vet page
+
+    @When("User clicks on add regular vet icon on manage regular vet page")
+    public void user_clicks_on_add_regular_vet_icon_on_manage_regular_vet_page() {
+        settingPage.clickOnAddRegularVetIcon();
+    }
+
+    @Then("Add regular vet page displays with all details")
+    public void add_regular_vet_page_displays_with_all_details() {
+        String addRegularVetPage = settingPage.verifyAddRegularVetPage() ;
+        Assert.assertEquals(addRegularVetPage, "Add Regular Vet");
+    }
+
+    //To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
+    @When("User clicks on hear about us icon on setting page")
+    public void user_clicks_on_hear_about_us_icon_on_setting_page() {
+        settingPage.clickOnHearAboutUsIcon();
+    }
+
+    @Then("Manage hear about us page displays with all task details")
+    public void manage_hear_about_us_page_displays_with_all_task_details() {
+        String hearAboutUsDetails = settingPage.verifyManageHearAboutUsPage();
+        if (hearAboutUsDetails.length() > 0) {
+            System.out.println(hearAboutUsDetails);
+        } else {
+            System.out.println("Hear About Us Page of pet displays with no data");
+        }
+    }
+    //Add hear about us page displays will all details when user clicks on add hear about us icon on manage hear about us page
+    @When("User clicks on add hear about us icon on manage hear about us page")
+    public void user_clicks_on_add_hear_about_us_icon_on_manage_hear_about_us_page() {
+        settingPage.clickOnAddHearAboutUsIcon();
+    }
+
+    @Then("Add hear about us page displays with all details")
+    public void add_hear_about_us_page_displays_with_all_details() {
+        String addHearAboutUsPage = settingPage.verifyAddHearAboutUsPage() ;
+        Assert.assertEquals(addHearAboutUsPage, "Add Hear About Us");
+    }
+
+    //Edit hear about us page displays upon clicking on edit icon against hear about us name on manage hear about us page
+    @When("User clicks on edit icon against hear about us name on manage hear about us page")
+    public void user_clicks_on_edit_icon_against_hear_about_us_name_on_manage_hear_about_us_page() {
+        settingPage.clickOnEditIconOnManageHearAboutUsPage();
+    }
+
+    @Then("Edit hear about us page displays in editable format")
+    public void edit_hear_about_us_page_displays_in_editable_format() {
+        String addRegularVetPage = settingPage.verifyEditHearAboutUsPage() ;
+        Assert.assertEquals(addRegularVetPage, "Edit Hear About Us");
+    }
+
 
 }
