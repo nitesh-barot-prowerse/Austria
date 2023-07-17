@@ -187,98 +187,98 @@ Feature: Verify Setting Module Features
     When User clicks on task type icon on setting page
     And User clicks on add task type icon on manage task type page
     Then Add task type page displays with all details
-#
-#  @Sanity
-#  Scenario:Edit task type page displays upon clicking on edit icon against task type  name on manage task type  page
-#    When User clicks on task type icon on setting page
-#    And User clicks on edit icon against task type  name on manage task type  page
-#    Then Edit task type page displays in editable format
-#
-#    ##Task Status
-#
-#  @Sanity
-#  Scenario: To verify whether Manage task status page displays with task status details by clicking on task status icon on setting page
-#    When User clicks on task status icon on setting page
-#    Then Manage task status page displays with all task details
-#
-#  @Sanity
-#  Scenario:Add task status page displays will all details when user clicks on add task status icon on manage task status  page
-#    When User clicks on task status icon on setting page
-#    And User clicks on add task status icon on manage task status page
-#    Then Add task status page displays with all details
-#
-#  @Sanity
-#  Scenario:Edit task status page displays upon clicking on edit icon against task status  name on manage task status  page
-#    When User clicks on task status icon on setting page
-#    And User clicks on edit icon against task status  name on manage task status  page
-#    Then Edit task status page displays in editable format
-#
-# ##Pet Breed
-#
-#  @Sanity
-#  Scenario: To verify whether Manage Pet Breed page displays with Pet Breed details by clicking on Pet Breed icon on setting page
-#    When User clicks on pet breed icon on setting page
-#    Then Manage pet breed page displays with all task details
-#
-#  @Sanity
-#  Scenario:Add Pet Breed page displays will all details when user clicks on add pet breed icon on manage pet breed  page
-#    When User clicks on pet breed icon on setting page
-#    And User clicks on add pet breed icon on manage pet breed page
-#    Then Add pet breed page displays with all details
-#
-#  @Sanity
-#  Scenario:Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
-#    When User clicks on pet breed icon on setting page
-#    And User clicks on edit icon against pet breed  name on manage pet breed page
-#    Then Edit pet breed page displays in editable format
 
-   ##Exclusion Page
+  @Sanity
+  Scenario:Edit task type page displays upon clicking on edit icon against task type  name on manage task type  page
+    When User clicks on task type icon on setting page
+    And User clicks on edit icon against task type  name on manage task type  page
+    Then Edit task type page displays in editable format
 
-#  @Sanity
-#  Scenario: To verify whether Manage Exclusion page displays with exclusion details by clicking on exclusion icon on setting page
-#    When User clicks on exclusion icon on setting page
-#    Then Manage exclusion page displays with all task details
-#
-#  @Sanity
-#  Scenario:Add exclusion page displays will all details when user clicks on add exclusion icon on manage exclusion page
-#    When User clicks on exclusion icon on setting page
-#    And User clicks on clicks on add exclusion icon on manage exclusion page
-#    Then Add exclusion page displays with all details
-#
-#  @Sanity
-#  Scenario:Edit exclusion page displays upon clicking on edit icon against exclusion code on manage exclusion page
-#    When User clicks on exclusion icon on setting page
-#    And User clicks on edit icon against exclusion code on manage exclusion page
-#    Then Edit exclusion page displays in editable format
-#
-#    #Regular Vet
-#
-#  @Sanity
-#  Scenario: To verify whether Manage regular vet displays with vet details by clicking on regular vet icon on setting page
-#    When User clicks on regular vet icon on setting page
-#    Then Manage regular vet displays with all task details
-#
-#  @Sanity
-#  Scenario:Add regular vet page displays will all details when user clicks on add regular vet icon on manage regular vet page
-#    When User clicks on regular vet icon on setting page
-#    And User clicks on add regular vet icon on manage regular vet page
-#    Then Add regular vet page displays with all details
-#
-#      ##Hear About Us
-#
-#  @Sanity
-#  Scenario: To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
-#    When User clicks on hear about us icon on setting page
-#    Then Manage hear about us page displays with all task details
-#
-#  @Sanity
-#  Scenario:Add hear about us page displays will all details when user clicks on add hear about us icon on manage hear about us page
-#    When User clicks on hear about us icon on setting page
-#    And User clicks on add hear about us icon on manage hear about us page
-#    Then Add hear about us page displays with all details
-#
-#  @Sanity
-#  Scenario:Edit hear about us page displays upon clicking on edit icon against hear about us name on manage hear about us page
-#    When User clicks on hear about us icon on setting page
-#    And User clicks on edit icon against hear about us name on manage hear about us page
-#    Then Edit hear about us page displays in editable format
+    ##Task Status
+
+  @Sanity
+  Scenario: To verify whether Manage task status page displays with task status details by clicking on task status icon on setting page
+    When User clicks on task status icon on setting page
+    Then Manage task status page displays with all task details
+
+  @Sanity
+  Scenario:Add task status page displays will all details when user clicks on add task status icon on manage task status  page
+    When User clicks on task status icon on setting page
+    And User clicks on add task status icon on manage task status page
+    Then Add task status page displays with all details
+
+  @Sanity
+  Scenario:Edit task status page displays upon clicking on edit icon against task status  name on manage task status  page
+    When User clicks on task status icon on setting page
+    And User clicks on edit icon against task status  name on manage task status  page
+    Then Edit task status page displays in editable format
+
+ ##Pet Breed
+
+  @Sanity
+  Scenario: To verify whether Manage Pet Breed page displays with Pet Breed details by clicking on Pet Breed icon on setting page
+    When User clicks on pet breed icon on setting page
+    Then Manage pet breed page displays with all task details
+
+  @Sanity
+  Scenario:Add Pet Breed page displays will all details when user clicks on add pet breed icon on manage pet breed  page
+    When User clicks on pet breed icon on setting page
+    And User clicks on add pet breed icon on manage pet breed page
+    Then Add pet breed page displays with all details
+
+  @Sanity
+  Scenario:Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
+    When User clicks on pet breed icon on setting page
+    And User clicks on edit icon against pet breed  name on manage pet breed page
+    Then Edit pet breed page displays in editable format
+
+   #Exclusion Page
+
+  @Sanity
+  Scenario: To verify whether Manage Exclusion page displays with exclusion details by clicking on exclusion icon on setting page
+    When User clicks on exclusion icon on setting page
+    Then Manage exclusion page displays with all task details
+
+  @Sanity
+  Scenario:Add exclusion page displays will all details when user clicks on add exclusion icon on manage exclusion page
+    When User clicks on exclusion icon on setting page
+    And User clicks on clicks on add exclusion icon on manage exclusion page
+    Then Add exclusion page displays with all details
+
+  @Sanity
+  Scenario:Edit exclusion page displays upon clicking on edit icon against exclusion code on manage exclusion page
+    When User clicks on exclusion icon on setting page
+    And User clicks on edit icon against exclusion code on manage exclusion page
+    Then Edit exclusion page displays in editable format
+
+    #Regular Vet
+
+  @Sanity
+  Scenario: To verify whether Manage regular vet displays with vet details by clicking on regular vet icon on setting page
+    When User clicks on regular vet icon on setting page
+    Then Manage regular vet displays with all task details
+
+  @Sanity
+  Scenario:Add regular vet page displays will all details when user clicks on add regular vet icon on manage regular vet page
+    When User clicks on regular vet icon on setting page
+    And User clicks on add regular vet icon on manage regular vet page
+    Then Add regular vet page displays with all details
+
+      ##Hear About Us
+
+  @Sanity
+  Scenario: To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
+    When User clicks on hear about us icon on setting page
+    Then Manage hear about us page displays with all task details
+
+  @Sanity
+  Scenario:Add hear about us page displays will all details when user clicks on add hear about us icon on manage hear about us page
+    When User clicks on hear about us icon on setting page
+    And User clicks on add hear about us icon on manage hear about us page
+    Then Add hear about us page displays with all details
+
+  @Sanity
+  Scenario:Edit hear about us page displays upon clicking on edit icon against hear about us name on manage hear about us page
+    When User clicks on hear about us icon on setting page
+    And User clicks on edit icon against hear about us name on manage hear about us page
+    Then Edit hear about us page displays in editable format
