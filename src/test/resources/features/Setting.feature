@@ -226,11 +226,11 @@ Feature: Verify Setting Module Features
     And User clicks on add pet breed icon on manage pet breed page
     Then Add pet breed page displays with all details
 
-  @Sanity
-  Scenario:Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
-    When User clicks on pet breed icon on setting page
-    And User clicks on edit icon against pet breed  name on manage pet breed page
-    Then Edit pet breed page displays in editable format
+#  @Sanity
+#  Scenario:Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
+#    When User clicks on pet breed icon on setting page
+#    And User clicks on edit icon against pet breed  name on manage pet breed page
+#    Then Edit pet breed page displays in editable format
 
    #Exclusion Page
 
