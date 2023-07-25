@@ -80,7 +80,8 @@ public class QuotePageSteps {
         String yearlyArray = quotePage.verifyTotalPremiumColumn();
         System.out.println(yearlyArray);
         String[] split = yearlyArray.split("[ \\.,]+");
-        for (int j = 3; j <= split.length; j = j + 3) {
+        System.out.println(split.length);
+        for (int j = 3; j <= split.length; j = j +2) {
             if (split[j].equals("€")) {
                 System.out.println(split[j]);
                 System.out.println("Data Post Fixed by €");
@@ -93,7 +94,8 @@ public class QuotePageSteps {
         String monthlyArray = quotePage.verifyMonthlyPremiumColumn();
         System.out.println(monthlyArray);
         String[] month = yearlyArray.split("[ \\.,]+");
-        for (int j = 3; j <= month.length; j = j + 3) {
+        System.out.println(split.length);
+        for (int j = 3; j <= month.length; j = j + 2) {
             if (month[j].equals("€")) {
                 System.out.println(month[j]);
                 System.out.println("Data Post Fixed by €");
