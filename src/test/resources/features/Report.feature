@@ -14,6 +14,8 @@ Feature: Verify Report Module Features
     When User clicks on reports icon
     Then Respected report page displays
 
+    ##Quote
+
   @Sanity
   Scenario: Filter quote report information upon option of product drop down
     When User clicks on quote report button on report page
@@ -58,46 +60,46 @@ Feature: Verify Report Module Features
     And User clicks on search button on policy summary report page
     Then Appropriate data displays on policy summary report page upon selected option from both drop down
 
-#  ##Policy Payment history report
-#
-#  Scenario: Filter Policy Payment history report information upon from and to date
-#    When User clicks on policy payment history button on report page
-#    And User enters from and to date value on policy payment history page
-#    And User clicks on search button on policy policy payment history page page
-#    Then Appropriate data displays on policy payment history page upon selected option from drop down
-#
-#   #Outstanding claims report
-#  @Sanity
-#  Scenario: Filter Outstanding Claims report information upon notified from and to date
-#    When User clicks on outstanding claims button on report page
-#    And User enters from and to date value on outstanding claims page
-#    And User clicks on search button on outstanding claims
-#    Then Appropriate data displays on outstanding claims upon date values
-#
-#  @Sanity
-#  Scenario: Sorting data on Filter Outstanding Claims report via sort by and sort direction dropdowns options
-#    When User clicks on outstanding claims button on report page
-#    And User selects any option from sort by and option from sort direction drop down respectively on Filter Outstanding Claims page
-#    And  User clicks on search button on outstanding claims
-#    Then Appropriate data displays on outstanding claims upon selected option from drop down
-#
-#  ##26 and 27 report
-#
-#  @Sanity
-#  Scenario:Add premium and claim adjustments window opens by clicking on adjustment button on section 26 and 27 report page
-#    When User clicks on Trust summary section button on report page
-#    And User clicks on adjustment button on section report page
-#    Then Add premium and claim adjustments window opens with all details
-#
-#  @Sanity
-#  Scenario:Payment window opens by clicking on payments button on section 26 and 27 report page
-#    When User clicks on Trust summary section button on report page
-#    And User clicks on payments button on section report page
-#    Then Payments window opens with all details
-#
-#  @Sanity
-#  Scenario:Opening and Closing bank balance window opens by clicking on bank button on section 26 and 27 report page
-#    When User clicks on Trust summary section button on report page
-#    And User clicks on bank button on section report page
-#    Then Opening and Closing bank balance window opens with all details
+  ##Policy Payment history report
+
+  Scenario: Filter Policy Payment history report information upon from and to date
+    When User clicks on policy payment history button on report page
+    And User enters from and to date value on policy payment history page
+    And User clicks on search button on policy policy payment history page page
+    Then Appropriate data displays on policy payment history page upon selected option from drop down
+
+   #Outstanding claims report
+  @Sanity
+  Scenario: Filter Outstanding Claims report information upon notified from and to date
+    When User clicks on outstanding claims button on report page
+    And User enters from and to date value on outstanding claims page
+    And User clicks on search button on outstanding claims
+    Then Appropriate data displays on outstanding claims upon date values
+
+  @Sanity
+  Scenario: Sorting data on Filter Outstanding Claims report via sort by and sort direction dropdowns options
+    When User clicks on outstanding claims button on report page
+    And User selects any option from sort by and option from sort direction drop down respectively on Filter Outstanding Claims page
+    And  User clicks on search button on outstanding claims
+    Then Appropriate data displays on outstanding claims upon selected option from drop down
+
+  ##26 and 27 report
+
+  @Sanity
+  Scenario:Add premium and claim adjustments window opens by clicking on adjustment button on section 26 and 27 report page
+    When User clicks on Trust summary section button on report page
+    And User clicks on adjustment button on section report page
+    Then Add premium and claim adjustments window opens with all details
+
+  @Sanity
+  Scenario:Payment window opens by clicking on payments button on section 26 and 27 report page
+    When User clicks on Trust summary section button on report page
+    And User clicks on payments button on section report page
+    Then Payments window opens with all details
+
+  @Sanity
+  Scenario:Opening and Closing bank balance window opens by clicking on bank button on section 26 and 27 report page
+    When User clicks on Trust summary section button on report page
+    And User clicks on bank button on section report page
+    Then Opening and Closing bank balance window opens with all details
 
