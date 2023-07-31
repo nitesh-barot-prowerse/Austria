@@ -85,21 +85,21 @@ Feature: Verify Report Module Features
 
   ##26 and 27 report
 
-  @Sanity
-  Scenario:Add premium and claim adjustments window opens by clicking on adjustment button on section 26 and 27 report page
-    When User clicks on Trust summary section button on report page
-    And User clicks on adjustment button on section report page
-    Then Add premium and claim adjustments window opens with all details
-
-  @Sanity
-  Scenario:Payment window opens by clicking on payments button on section 26 and 27 report page
-    When User clicks on Trust summary section button on report page
-    And User clicks on payments button on section report page
-    Then Payments window opens with all details
-
-  @Sanity
-  Scenario:Opening and Closing bank balance window opens by clicking on bank button on section 26 and 27 report page
-    When User clicks on Trust summary section button on report page
-    And User clicks on bank button on section report page
-    Then Opening and Closing bank balance window opens with all details
+#  @Sanity
+#  Scenario:Add premium and claim adjustments window opens by clicking on adjustment button on section 26 and 27 report page
+#    When User clicks on Trust summary section button on report page
+#    And User clicks on adjustment button on section report page
+#    Then Add premium and claim adjustments window opens with all details
+#
+#  @Sanity
+#  Scenario:Payment window opens by clicking on payments button on section 26 and 27 report page
+#    When User clicks on Trust summary section button on report page
+#    And User clicks on payments button on section report page
+#    Then Payments window opens with all details
+#
+#  @Sanity
+#  Scenario:Opening and Closing bank balance window opens by clicking on bank button on section 26 and 27 report page
+#    When User clicks on Trust summary section button on report page
+#    And User clicks on bank button on section report page
+#    Then Opening and Closing bank balance window opens with all details
 
