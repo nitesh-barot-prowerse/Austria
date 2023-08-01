@@ -81,7 +81,7 @@ public class QuotePageSteps {
         System.out.println(yearlyArray);
         String[] split = yearlyArray.split("[ \\.,]+");
         System.out.println(split.length);
-        for (int j = 3; j <= split.length; j = j +3) {
+        for (int j = 0; j <= split.length-1; j = j +3) {
             if (split[j].equals("€")) {
                 System.out.println(split[j]);
                 System.out.println("Data Post Fixed by €");
@@ -95,7 +95,7 @@ public class QuotePageSteps {
         System.out.println(monthlyArray);
         String[] month = yearlyArray.split("[ \\.,]+");
         System.out.println(split.length);
-        for (int j = 3; j <= month.length; j = j + 3) {
+        for (int j = 0; j <= month.length-1; j = j + 3) {
             if (month[j].equals("€")) {
                 System.out.println(month[j]);
                 System.out.println("Data Post Fixed by €");
