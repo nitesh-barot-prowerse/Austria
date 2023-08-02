@@ -202,6 +202,44 @@ public class QuotePageSteps {
 
     }
 
+    //Fetch list of quote based on option from Is referred dropdown on manage quote page
+
+    @When("User selects appropriate option from Is referred dropdown on manage quote page")
+    public void user_selects_appropriate_option_from_is_referred_dropdown_on_manage_quote_page() {
+        quotePage.selectOptionFromIsReferredDropDown();
+
+    }
+
+    @Then("Appropriate list of quote will display upon drop down option")
+    public void appropriate_list_of_quote_will_display_upon_drop_down_option() {
+
+        String quoteDetails=quotePage.verifyListOfQuoteBasedOnIsReferredDD();
+        if ((quoteDetails.length()>0)){
+            System.out.println("List of quotes display upon product dropdown value ");
+        }
+        else {
+            System.out.println("Failed to display data upon selected is referred option");
+        }
+
+    }
+
+    //Fetch list of quote based on option from division dropdown on manage quote page
+    @When("User selects appropriate option from division dropdown on manage quote page")
+    public void user_selects_appropriate_option_from_division_dropdown_on_manage_quote_page() {
+        quotePage.selectOptionFromDivisionDropDown();
+    }
+
+    @Then("Appropriate list of quote will display upon division drop down option")
+    public void appropriate_list_of_quote_will_display_upon_division_drop_down_option() {
+        String quoteDetails=quotePage.verifyListOfQuoteBasedOnDivisionDD();
+        if ((quoteDetails.length()>0)){
+            System.out.println("List of quotes display upon product dropdown value ");
+        }
+        else {
+            System.out.println("Failed to display data upon selected division option");
+        }
+    }
+
     //Fetch quote on manage quote page based on quote number for stage
 
     @When("User enters quote number inside search box on manage quote page")

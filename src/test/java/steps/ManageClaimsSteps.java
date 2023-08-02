@@ -60,7 +60,7 @@ public class ManageClaimsSteps {
         //System.out.println(amountPayable);
         String[] split = amountPayable.split("[ \\.,]+");
         //System.out.println(s);
-        for (int j = 3; j <= split.length; j = j + 3) {
+        for (int j = 3; j <= split.length-1; j = j + 3) {
             if (split[j].equals("€")) {
                 System.out.println("Data Post Fixed by €");
 
@@ -134,6 +134,96 @@ public class ManageClaimsSteps {
             System.out.println("Treatment status does not appear ");
         }
     }
+
+    //Verify edit claim page displays after clicking on edit claim icon on manage claim page
+
+    @When("User clicks on edit claim icon on cog icon on manage claim page")
+    public void user_clicks_on_edit_claim_icon_on_cog_icon_on_manage_claim_page() {
+        claimPage.selectEditClientDetails();
+
+    }
+
+    @Then("Edit claim page displays with editable form")
+    public void edit_claim_page_displays_with_editable_form() {
+
+        String editClaimPage = claimPage.verifyEditClaimPage();
+
+        Assert.assertEquals(editClaimPage, "Edit Claim");
+
+    }
+
+    //Verify view policy page displays after clicking on view policy icon on manage claim page
+
+    @When("User clicks on view policy  icon on cog icon on manage claim page")
+    public void user_clicks_on_view_policy_icon_on_cog_icon_on_manage_claim_page() {
+        claimPage.selectViewPolicyPage();
+    }
+
+    @Then("View policy  page displays with all details")
+    public void view_policy_page_displays_with_all_details() {
+        String viewPolicyPage = claimPage.verifyViewPolicyPage();
+        Assert.assertEquals(viewPolicyPage, "Policy Information");
+    }
+
+    //Filter Claim details on manage claim page upon option from claim status drop down
+
+    @When("User selects appropriate option from claim status dropdown")
+    public void user_selects_appropriate_option_from_claim_status_dropdown() {
+        claimPage.selectOptionFromStatusDropDown();
+    }
+
+    @When("User clicks on search button on manage claim page")
+    public void user_clicks_on_search_button_on_manage_claim_page() {
+        claimPage.clickOnSearchButton();
+
+    }
+
+    @Then("Details of claim on manage claim page filters upon status drop dwon option")
+    public void details_of_claim_on_manage_claim_page_filters_upon_status_drop_dwon_option() {
+        String claimDetails = claimPage.verifyDetailsOfClaim();
+        if (claimDetails.length() > 0) {
+            System.out.println(claimDetails);
+        } else {
+            System.out.println("Details of claim does nit displays upon status dropdown option");
+        }
+
+    }
+
+    //Filter Claim details on manage claim page upon option from treatment status drop down
+
+    @When("User selects appropriate option from treatment status drop down")
+    public void user_selects_appropriate_option_from_treatment_status_drop_down() {
+        claimPage.selectOptionOfTreatmentStatusDD();
+    }
+
+    @Then("Details of claim on manage claim page filters upon treatment status drop down option")
+    public void details_of_claim_on_manage_claim_page_filters_upon_treatment_status_drop_down_option() {
+        String claimDetails = claimPage.verifyDetailsOfClaim();
+        if (claimDetails.length() > 0) {
+            System.out.println(claimDetails);
+        } else {
+            System.out.println("Details of claim does nit displays upon treatment status dropdown option");
+        }
+
+    }
+
+    //Filter Claim details on manage claim page upon from and to date value of claim first advised on manage claim page
+
+    @When("User enters value of from and to date value of claim first advised on manage claim page")
+    public void user_enters_value_of_from_and_to_date_value_of_claim_first_advised_on_manage_claim_page() {
+        claimPage.enterValueOfFromAndToDateOfAdvised();
+    }
+
+    @Then("Details of claim on manage claim page filters upon value of from and to date value of claim first advised on manage claim page")
+    public void details_of_claim_on_manage_claim_page_filters_upon_value_of_from_and_to_date_value_of_claim_first_advised_on_manage_claim_page() {
+        String claimDetails = claimPage.verifyDetailsOfClaim();
+        if (claimDetails.length() > 0) {
+            System.out.println(claimDetails);
+        } else {
+            System.out.println("Details of claim does not displays upon from and to date value of claim first advised on manage claim page");
+        }
+    }
+
 
 
 }
