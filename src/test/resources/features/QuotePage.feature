@@ -49,6 +49,18 @@ Feature: Verify Quote Module Features
     And User clicks on search button on manage quote page
     Then Appropriate list of quote will display
 
+#  @Sanity
+#  Scenario: Fetch list of quote based on option from Is referred dropdown on manage quote page
+#    When User selects appropriate option from Is referred dropdown on manage quote page
+#    And User clicks on search button on manage quote page
+#    Then Appropriate list of quote will display upon drop down option
+#
+#  @Sanity
+#  Scenario: Fetch list of quote based on option from division dropdown on manage quote page
+#    When User selects appropriate option from division dropdown on manage quote page
+#    And User clicks on search button on manage quote page
+#    Then Appropriate list of quote will display upon division drop down option
+
 #  @Stage
 #  Scenario:Fetch quotation based on quote number on manage quote page
 #    When User enters quote number inside search box on manage quote page
@@ -63,9 +75,7 @@ Feature: Verify Quote Module Features
 
 #  @Stage
 #  Scenario: Edit quote details and verifies the same
-#    When User enters quote number inside search box on manage quote page
-#    And User clicks on search button on manage quote page
-#    And User selects edit quote option from cog icon on quote information page
+#    When User selects edit quote option from cog icon on quote information page
 #    Then User can edit all required field on edit quote page
 
 

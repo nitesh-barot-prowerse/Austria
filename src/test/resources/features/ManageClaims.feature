@@ -30,3 +30,31 @@ Feature: Verify Manage Claim Module Features
 #    When User selects any options from treatment status dropdown on manage claim page
 #    Then Appropriate treatment status will display on manage claim page under claim details
 
+#  @Sanity
+#  Scenario:Verify edit claim page displays after clicking on edit claim icon on manage claim page
+#    When User clicks on edit claim icon on cog icon on manage claim page
+#    Then Edit claim page displays with editable form
+#
+#  @Sanity
+#  Scenario:Verify view policy page displays after clicking on view policy icon on manage claim page
+#    When User clicks on view policy  icon on cog icon on manage claim page
+#    Then View policy  page displays with all details
+#
+#  @Sanity
+#  Scenario:Filter Claim details on manage claim page upon option from claim status drop down
+#    When User selects appropriate option from claim status dropdown
+#    And User clicks on search button on manage claim page
+#    Then Details of claim on manage claim page filters upon status drop dwon option
+#
+#  @Sanity
+#  Scenario:Filter Claim details on manage claim page upon option from treatment status drop down
+#    When User selects appropriate option from treatment status drop down
+#    And User clicks on search button on manage claim page
+#    Then Details of claim on manage claim page filters upon treatment status drop down option
+#
+#  @Sanity
+#  Scenario:Filter Claim details on manage claim page upon from and to date value of claim first advised on manage claim page
+#    When User enters value of from and to date value of claim first advised on manage claim page
+#    And User clicks on search button on manage claim page
+#    Then Details of claim on manage claim page filters upon value of from and to date value of claim first advised on manage claim page
+
