@@ -52,6 +52,34 @@ public class ManageClaimPage {
 
     private By clickSearchButton=By.cssSelector("button[id='SearchGrid']");
 
+    //Edit claim
+
+    private By cogIcon = By.xpath("//div[@id='gridName']/table/tbody[1]/tr[1]/td[21]/ul/li/a");
+
+    private By editPageIconInFDropDown = By.xpath("//div[@id='gridName']/table/tbody[1]/tr[1]/td[21]/ul/li/ul/li[1]/a");
+
+    //View Policy
+
+    private By viewPolicyPageIconOnDropDown = By.xpath("//div[@id='gridName']/table/tbody[1]/tr[1]/td[21]/ul/li/ul/li[3]/a");
+
+    //Claim status dropdown
+
+    private By statusDropDownOnClaim = By.xpath("//div[@id='search']/div[5]/div/span/span");
+
+    private By optionFromStatusDD = By.xpath("//ul[@id='ClaimStatusId_listbox']/li[2]");
+
+    private By verifyDataOnClaimPage = By.xpath("//div[@id='gridName']/table/tbody/tr");
+
+    private By treatmentStatusDropDownOnClaim=By.xpath("//div[@id='search']/div[6]/div/div/div/button");
+
+    private By optionFromTreatmentStatusDD=By.xpath("//div[@id='search']/div[6]/div/div/div/div/ul/li[2]/label");
+
+    private By claimAdvisedFromDate=By.xpath("//div[@id='search']/div[7]/div/span/span/input");
+
+    private By claimAdvisedToDate=By.xpath("//div[@id='search']/div[8]/div/span/span/input");
+
+    private By searchButton=By.cssSelector("button[id='SearchGrid']");
+
 
 
 
@@ -259,6 +287,112 @@ public class ManageClaimPage {
         }
         return Status;
 
+    }
+
+    //Edit client details
+
+    public void selectEditClientDetails() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(cogIcon)).perform();
+        driver.findElement(editPageIconInFDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public String verifyEditClaimPage() {
+        return driver.findElement(displayedMessage).getText();
+
+    }
+
+    //View Policy Page
+
+    public void selectViewPolicyPage() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(cogIcon)).perform();
+        driver.findElement(viewPolicyPageIconOnDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public String verifyViewPolicyPage() {
+        return driver.findElement(displayedMessage).getText();
+
+    }
+
+    //Filter Claim details on manage claim page upon option from claim status drop down
+
+    public void selectOptionFromStatusDropDown() {
+        driver.findElement(statusDropDownOnClaim).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromStatusDD).click();
+
+    }
+
+    public void clickOnSearchButton(){
+        driver.findElement(searchButton).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String verifyDetailsOfClaim() {
+        return driver.findElement(verifyDataOnClaimPage).getText();
+    }
+
+    public void selectOptionOfTreatmentStatusDD(){
+        driver.findElement(treatmentStatusDropDownOnClaim).click();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromTreatmentStatusDD).click();
+
+    }
+
+    //Filter Claim details on manage claim page upon from and to date value of claim first advised on manage claim page
+
+    public void enterValueOfFromAndToDateOfAdvised(){
+        driver.findElement(claimAdvisedFromDate).sendKeys("23.02.2023");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(claimAdvisedToDate).sendKeys("24.06.2024");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

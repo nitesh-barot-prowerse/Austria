@@ -42,6 +42,17 @@ public class QuotePage {
 
     private By optionsFromProductDD = By.xpath("//ul[@id='ProductId_listbox']/li[3]");
 
+    private By isReferredDropdown = By.xpath("//div[@class='ibox-content-search m-b-sm']/div[1]/div[1]/div[3]/div/span");
+
+    private By optionsFromIsReferredDD = By.xpath("//ul[@id='IsReferRequired_listbox']/li[2]");
+
+    private By divisionDropdown = By.xpath("//div[@class='ibox-content-search m-b-sm']/div[1]/div[2]/div[4]/div/span");
+
+    private By optionsFromDivisionDD = By.xpath("//ul[@id='DivisionId_listbox']/li[2]");
+
+
+    private By detailsOfQuotes=By.xpath("//div[@id='gridName']/table/tbody/tr");
+
     private By searchButton = By.cssSelector("button[id='SearchGrid']");
 
     //Fetch quote on manage quote page based on quote number
@@ -67,9 +78,11 @@ public class QuotePage {
 
     private By selectOptionFromHearAboutUsDD = By.xpath("//ul[@id='HearAboutUs_listbox']/li[3]");
 
-    private By petBreedDropDown = By.xpath("//div[@id='Div_11366']/div/div/span");
+    private By petSpeciesDropDown = By.xpath("//div[@id='Div_11366']/div/div/span");
 
-    private By selectOptionFromPrtBreedDD = By.xpath("//ul[@id='Question_11366_listbox']/li[16]");
+    private By selectOptionFromPetSpeciesDD = By.xpath("//ul[@id='Question_11366_listbox']/li[6]");
+
+    private By petName=By.xpath("//div[@id='Div_11365']/div/div/input");
 
     private By petGenderDropDown = By.xpath("//div[@id='Div_11367']/div/div/span");
 
@@ -77,9 +90,11 @@ public class QuotePage {
 
     private By petBirthDate = By.cssSelector("input[id='Question_11368']");
 
-    private By petPurchaseAmount = By.xpath("//div[@id='Div_11369']/div/div/span/span/input");
+    private By petPurchaseAmount = By.xpath("//div[@id='Div_11369']/div/div/span/span/input[@id='Question_11369']");
 
     private By petAdminFees = By.cssSelector("input[id='Question_11370']");
+
+    private By calculateButton = By.xpath("//button[@id='btnCalculate']");
 
     //  private By calculateButton = By.xpath("//button[@id='btnCalculate']");
 
@@ -315,6 +330,49 @@ public class QuotePage {
 
     }
 
+    //Fetch list of quote based on option from Is referred dropdown on manage quote page
+
+    public void selectOptionFromIsReferredDropDown() {
+
+        driver.findElement(isReferredDropdown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionsFromIsReferredDD).click();
+
+    }
+
+
+
+    public String verifyListOfQuoteBasedOnIsReferredDD() {
+        return  driver.findElement(detailsOfQuotes).getText();
+
+    }
+
+
+    //Fetch list of quote based on option from division dropdown on manage quote page
+
+    public void selectOptionFromDivisionDropDown() {
+
+        driver.findElement(divisionDropdown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionsFromDivisionDD).click();
+
+    }
+
+
+
+    public String verifyListOfQuoteBasedOnDivisionDD() {
+        return  driver.findElement(detailsOfQuotes).getText();
+
+    }
+
     //Fetch quote on manage quote page based on quote number for UTS Stage
 
     public void enterQuoteNumberInsideSearchBox() {
@@ -396,16 +454,23 @@ public class QuotePage {
 
     public void editQuoteDetails() {
         //Scroll up
+        //Scroll up
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,250)", "");
         driver.findElement(enterPostCodeInAddressDropDown).clear();
         driver.findElement(enterPostCodeInAddressDropDown).sendKeys("RM8 2TE");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(2500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(selectPostCodeFromDD).click();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         driver.findElement(hearAboutUsDropDown).click();
         try {
@@ -414,17 +479,47 @@ public class QuotePage {
             throw new RuntimeException(e);
         }
         driver.findElement(selectOptionFromHearAboutUsDD).click();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
 
         //Scroll up
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("window.scrollBy(0,-150)", "");
-        driver.findElement(petBreedDropDown).click();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElement(selectOptionFromPrtBreedDD).click();
+
+        driver.findElement(petName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(petName).sendKeys("TestEditQuote");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.findElement(petSpeciesDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(selectOptionFromPetSpeciesDD).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         driver.findElement(petGenderDropDown).click();
         try {
@@ -433,35 +528,64 @@ public class QuotePage {
             throw new RuntimeException(e);
         }
         driver.findElement(selectOptionsFromPetGDD).click();
-
-        driver.findElement(petBirthDate).clear();
-        driver.findElement(petBirthDate).sendKeys("02.08.2020");
-
-
-        //driver.findElement(petPurchaseAmount).clear();
-        //driver.findElement(petPurchaseAmount).sendKeys("500");
-
-        //driver.findElement(petAdminFees).clear();
-        //driver.findElement(petAdminFees).sendKeys("20");
-
-        //driver.findElement(calculateButton).click();
-        /*((JavascriptExecutor) driver).executeScript("arguments[0].click()", driver.findElement(calculateButton));
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        JavascriptExecutor js2 = (JavascriptExecutor) driver;
-        js2.executeScript("window.scrollBy(0,150)", "");
-
-        //driver.findElement(closeButton).click();
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", driver.findElement(closeButton));
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }*/
+        }
+
+        driver.findElement(petBirthDate).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(petBirthDate).sendKeys("02.08.2020");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('Question_11369').style.display='block';");
+        driver.findElement(petPurchaseAmount).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('Question_11369').style.display='block';");
+        driver.findElement(petPurchaseAmount).sendKeys("500");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('Question_11370').style.display='block';");
+        driver.findElement(petAdminFees).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('Question_11370').style.display='block';");
+        driver.findElement(petAdminFees).sendKeys("20");
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        //driver.findElement(calculateButton).click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", driver.findElement(calculateButton));
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }
