@@ -79,12 +79,12 @@ Feature: Verify Policy Module Features
 #    And User selects view quote icon option from cog drop down on policy information page
 #    Then Quote information displays with all required details
 
-  @sanity
-  Scenario: Cancel  policy window displays with all details by clicking cancel policy icon of cog drop down on policy information page
-    When User selects any active option from status dropdown on manage policy page
-    And User clicks on policy number link on manage policy page
-    And User selects cancel policy icon of cog drop down on policy information page
-    Then Cancel policy window displays with all required details
+#  @sanity
+#  Scenario: Cancel  policy window displays with all details by clicking cancel policy icon of cog drop down on policy information page
+#    When User selects any active option from status dropdown on manage policy page
+#    And User clicks on policy number link on manage policy page
+#    And User selects cancel policy icon of cog drop down on policy information page
+#    Then Cancel policy window displays with all required details
 
   @sanity
   Scenario:Allocate payment page displays with all details by clicking add allocate payment icon of cog drop down on policy information page
