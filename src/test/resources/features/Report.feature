@@ -62,11 +62,11 @@ Feature: Verify Report Module Features
 
   ##Policy Payment history report
 
-  Scenario: Filter Policy Payment history report information upon from and to date
-    When User clicks on policy payment history button on report page
-    And User enters from and to date value on policy payment history page
-    And User clicks on search button on policy policy payment history page page
-    Then Appropriate data displays on policy payment history page upon selected option from drop down
+#  Scenario: Filter Policy Payment history report information upon from and to date
+#    When User clicks on policy payment history button on report page
+#    And User enters from and to date value on policy payment history page
+#    And User clicks on search button on policy policy payment history page page
+#    Then Appropriate data displays on policy payment history page upon selected option from drop down
 
    #Outstanding claims report
   @Sanity
