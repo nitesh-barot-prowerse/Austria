@@ -30,11 +30,11 @@ Feature: Verify Policy Module Features
     When User selects any options from status dropdown
     Then Appropriate data displays on manage policy page depend on drop down option
 
-#  @Sanity
-#  Scenario:Filter policy details on manage policy page upon from and to date value of policy  on manage policy page
-#    When User enters value of from and to date value of policy on manage policy page
-#    And User clicks on search button on manage policy page
-#    Then Details of policy on manage policy page filters upon value of from and to date value of policy
+  @Sanity
+  Scenario:Filter policy details on manage policy page upon from and to date value of policy  on manage policy page
+    When User enters value of from and to date value of policy on manage policy page
+    And User clicks on search button on manage policy page
+    Then Details of policy on manage policy page filters upon value of from and to date value of policy
 
   @sanity
   Scenario: Verify that add claim page should open with all details by clicking on add claim icon of cog drop down against policy number on manage policy page
@@ -51,12 +51,12 @@ Feature: Verify Policy Module Features
     When User clicks on view quote icon of cog drop down against policy number on manage policy page
     Then Quote information page displays with all details
 
-#  @sanity
-#  Scenario: Add claim page displays with all details by clicking add claim icon of cog drop down on policy information page
-#    When User selects any active option from status dropdown on manage policy page
-#    When User clicks on policy number link on manage policy page
-#    And User selects add claim page icon option from cog drop dowm on policy information page
-#    Then Add claim page displays with all details
+  @sanity
+  Scenario: Add claim page displays with all details by clicking add claim icon of cog drop down on policy information page
+    When User selects any active option from status dropdown on manage policy page
+    When User clicks on policy number link on manage policy page
+    And User selects add claim page icon option from cog drop dowm on policy information page
+    Then Add claim page displays with all details
 
   @sanity
   Scenario: Add note window displays with all details by clicking add note icon of cog drop down on policy information page
@@ -78,7 +78,7 @@ Feature: Verify Policy Module Features
 #    And User clicks on policy number link on manage policy page
 #    And User selects view quote icon option from cog drop down on policy information page
 #    Then Quote information displays with all required details
-
+#
 #  @sanity
 #  Scenario: Cancel  policy window displays with all details by clicking cancel policy icon of cog drop down on policy information page
 #    When User selects any active option from status dropdown on manage policy page
