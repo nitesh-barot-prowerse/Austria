@@ -96,7 +96,7 @@ public class ManageClaimPage {
 
     public String verifyClaimPageInformation() {
 
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr")));
         String itemsDisplayed = " ";
         for (WebElement cEle : totalColumn) {
@@ -107,7 +107,7 @@ public class ManageClaimPage {
     }
 
     public String verifyTreatmentDate() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> claimDateColumn = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[14]")));
         String treatmentDate = " ";
         for (WebElement startDate : claimDateColumn) {
@@ -117,7 +117,7 @@ public class ManageClaimPage {
     }
 
     public String verifyFirstAdvisedDate() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> claimDateColumn = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[15]")));
         String fAdvisedDate = " ";
         for (WebElement startDate : claimDateColumn) {
@@ -129,7 +129,7 @@ public class ManageClaimPage {
 
 
     public String verifyAmountPayableColumn() {
-        WebDriverWait mWait = new WebDriverWait(driver, 10);
+        WebDriverWait mWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> monthlyPremiumColumn = mWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]")));
         String yPremium = " ";
         for (WebElement amountP : monthlyPremiumColumn) {
@@ -141,7 +141,7 @@ public class ManageClaimPage {
 
     public String redirectToClaimInformationPage() {
 
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[5]/a")));
         int cSize = totalColumn.size();
          String displayMessage=" ";
@@ -156,6 +156,11 @@ public class ManageClaimPage {
             ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs2.get(1));
             //System.out.println(driver.getCurrentUrl());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
             System.out.println(driver.getCurrentUrl());
             displayMessage = displayMessage + driver.findElement(displayedMessage).getText();
@@ -276,7 +281,7 @@ public class ManageClaimPage {
     }
 
     public String verifyTreatmentStatus(){
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr")));
 
         String Status = " ";

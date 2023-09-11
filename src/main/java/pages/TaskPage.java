@@ -59,7 +59,7 @@ public class TaskPage {
     }
 
     public String fetchData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalRow = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String data = " ";
         for (WebElement rEle : totalRow) {
@@ -89,7 +89,7 @@ public class TaskPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> drop = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@id='AssignedToId_listbox']/li[1]/table/tbody/tr/td")));
         System.out.println(drop.size());
         String rev = "";
@@ -119,7 +119,7 @@ public class TaskPage {
     }
 
     public String verifyStatusOfManageTaskData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> statusValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String status = "";
         for (WebElement element : statusValue) {
@@ -151,7 +151,7 @@ public class TaskPage {
     }
 
     public String verifyPriorityDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> priorityValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String priority = "";
         for (WebElement element : priorityValue) {
@@ -187,7 +187,7 @@ public class TaskPage {
     }
 
     public String verifyTypeDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> typeValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : typeValue) {
@@ -223,7 +223,7 @@ public class TaskPage {
 
     public String verifyClientDataOfTask() {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : clientValue) {
@@ -235,7 +235,7 @@ public class TaskPage {
     }
 
     public void clickAndFetchDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[3]")));
 
         for (WebElement element : clientValue) {
