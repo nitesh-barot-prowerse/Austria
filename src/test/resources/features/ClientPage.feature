@@ -22,12 +22,12 @@ Feature: Verify Client Module Features
 #    And User clicks on search button manage client page
 #    Then Appropriate client information displays inside table on manage client page
 
-#  @Sanity
-#  Scenario: Filter list of client based on active status dropdown option on manage client page
-#    When User selects appropriate option from Active dropdown on manage client page
-#    And User clicks on search button
-#    And User clicks on client code on manage client page
-#    Then Client status displays on view client page
+  @Sanity
+  Scenario: Filter list of client based on active status dropdown option on manage client page
+    When User selects appropriate option from Active dropdown on manage client page
+    And User clicks on search button
+    And User clicks on client code on manage client page
+    Then Client status displays on view client page
 #
 #  @Sanity
 #  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
@@ -51,12 +51,12 @@ Feature: Verify Client Module Features
 #    When User clicks on client code on manage client page
 #    And User clicks on add quote icon on cog dropdown menu on view client page
 #    Then Add quote page should display in editable format
-#
-#  @Sanity
-#  Scenario:Add policy page should display in editable format by clicking on add policy icon on cog dropdown menu on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on add policy icon on cog dropdown menu on view client page
-#    Then Add policy page should display in editable format
+
+  @Sanity
+  Scenario:Add policy page should display in editable format by clicking on add policy icon on cog dropdown menu on view client page
+    When User clicks on client code on manage client page
+    And User clicks on add policy icon on cog dropdown menu on view client page
+    Then Add policy page should display in editable format
 
   @Sanity
   Scenario:Add claim page should display with all details by clicking on add claim icon on cog dropdown menu on view client page
@@ -64,11 +64,11 @@ Feature: Verify Client Module Features
     And User clicks on add claim icon on cog dropdown menu on view client page
     Then Add claim page should display with all details
 
-#  @Sanity
-#  Scenario:Client Refund Unallocated Balance page displays with all details by clicking on client refund unallocated balance icon on cog dropdown menu on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on client refund unallocated balance icon on cog dropdown menu on view client page
-#    Then Client Refund Unallocated Balance page displays with all details
+  @Sanity
+  Scenario:Client Refund Unallocated Balance page displays with all details by clicking on client refund unallocated balance icon on cog dropdown menu on view client page
+    When User clicks on client code on manage client page
+    And User clicks on client refund unallocated balance icon on cog dropdown menu on view client page
+    Then Client Refund Unallocated Balance page displays with all details
 #
 #  @Sanity
 #  Scenario:Client Refund Credit Note page displays with all details by clicking on client refund credit note icon on cog dropdown menu on view client page
@@ -76,11 +76,11 @@ Feature: Verify Client Module Features
 #    And User clicks on client refund credit note icon on cog dropdown menu on view client page
 #    Then Client Refund Credit Note page displays with all details
 #
-#  @Sanity
-#  Scenario:Client Allocate Payment page displays with all details by clicking on client allocate payment icon on cog dropdown menu on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on client allocate payment icon on cog dropdown menu on view client page
-#    Then Client Allocate Payment page displays with all details
+  @Sanity
+  Scenario:Client Allocate Payment page displays with all details by clicking on client allocate payment icon on cog dropdown menu on view client page
+    When User clicks on client code on manage client page
+    And User clicks on client allocate payment icon on cog dropdown menu on view client page
+    Then Client Allocate Payment page displays with all details
 #
 #  @Sanity
 #  Scenario:Client Account Maintenance page displays with all details by clicking on client account maintenance page icon on cog dropdown menu on view client page
@@ -94,53 +94,53 @@ Feature: Verify Client Module Features
     And User clicks on  clicking on debtor ledger icon on cog dropdown menu on view client page
     Then Debtor ledger page should display in editable format
 
-#  @Sanity
-#  Scenario: Policies details of client displays by clicking on policy tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on policy tab on view client page
-#    Then Policies details should display on view client page
-#
-#  @Sanity
-#  Scenario: Claims details of client displays by clicking on claim tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on claim tab on view client page
-#    Then Claim details should display on view client page
-#
-#  @Sanity
-#  Scenario: Contacts details of client displays by clicking on contact tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on contact tab on view client page
-#    Then Contact details should display on view client page
-#
-#  @Sanity
-#  Scenario: Notes details of client displays by clicking on notes tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on notes tab on view client page
-#    Then Notes details should display on view client page
-#
-#  @Sanity
-#  Scenario: Task details of client displays by clicking on task tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on task tab on view client page
-#    Then Task details should display on view client page
+  @Sanity
+  Scenario: Policies details of client displays by clicking on policy tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on policy tab on view client page
+    Then Policies details should display on view client page
 
-#  @Sanity
-#  Scenario: History details of client displays by clicking on history tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on history tab on view client page
-#    Then History details should display on view client page
-#
-#  @Sanity
-#  Scenario: Quotes details of client displays by clicking on quote tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on quote tab on view client page
-#    Then Quote details should display on view client page
-#
-#  @Sanity
-#  Scenario: Policies Statement details of client displays by clicking on policies statement tab on view client page
-#    When User clicks on client code on manage client page
-#    And User clicks on policies statement tab on view client page
-#    Then Policies Statement details should display on view client page
+  @Sanity
+  Scenario: Claims details of client displays by clicking on claim tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on claim tab on view client page
+    Then Claim details should display on view client page
+
+  @Sanity
+  Scenario: Contacts details of client displays by clicking on contact tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on contact tab on view client page
+    Then Contact details should display on view client page
+
+  @Sanity
+  Scenario: Notes details of client displays by clicking on notes tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on notes tab on view client page
+    Then Notes details should display on view client page
+
+  @Sanity
+  Scenario: Task details of client displays by clicking on task tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on task tab on view client page
+    Then Task details should display on view client page
+
+  @Sanity
+  Scenario: History details of client displays by clicking on history tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on history tab on view client page
+    Then History details should display on view client page
+
+  @Sanity
+  Scenario: Quotes details of client displays by clicking on quote tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on quote tab on view client page
+    Then Quote details should display on view client page
+
+  @Sanity
+  Scenario: Policies Statement details of client displays by clicking on policies statement tab on view client page
+    When User clicks on client code on manage client page
+    And User clicks on policies statement tab on view client page
+    Then Policies Statement details should display on view client page
 
 
 #  @Stage
