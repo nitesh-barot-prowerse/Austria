@@ -45,6 +45,13 @@ Feature: Verify Policy Module Features
 #  Scenario: Verify that add note window should open with all details by clicking on add note icon of cog drop down against policy number on manage policy page
 #    When User clicks on add note window icon of cog drop down against policy number on manage policy page
 #    Then Add note window displays with all details
+
+#  @Sanity
+#  Scenario:Verify that add latter page should open with all details by clicking on add latter icon of cog drop down against policy number on manage policy page
+#    When User clicks on add latter window icon of cog drop down against policy number on manage policy page
+#    And User enter all details to generate letter for client and selects send email and letter option
+#    Then Generated letter should displays under letter tab on policy information page
+
 #
 #  @sanity
 #  Scenario: Verify that quote information page should open with all details by clicking on view quote icon of cog drop down against policy number on manage policy page
@@ -166,3 +173,9 @@ Feature: Verify Policy Module Features
 #    And User clicks on policy ledger tab on policy information page
 #    Then User will able to see appropriate data upon clicking policy ledger tab
 #
+
+#  @Sanity
+#  Scenario: Add claim for existing policy
+#    When User click on policy icon and selects add claim icon for existing policy
+#    And User enters claim details
+#    And User clicks on save button

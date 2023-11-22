@@ -19,7 +19,7 @@ public class ManageClaimsSteps {
     @Then("User will able see all data available on manage claim page")
     public void user_will_able_see_all_data_available_on_manage_claim_page() {
         String displayedData = claimPage.verifyClaimPageInformation();
-        if (displayedData.length()>0) {
+        if (displayedData.length() > 0) {
             System.out.println(displayedData);
         }
     }
@@ -60,7 +60,7 @@ public class ManageClaimsSteps {
         //System.out.println(amountPayable);
         String[] split = amountPayable.split("[ \\.,]+");
         //System.out.println(s);
-        for (int j = 3; j <= split.length-1; j = j + 3) {
+        for (int j = 3; j <= split.length - 1; j = j + 3) {
             if (split[j].equals("€")) {
                 System.out.println("Data Post Fixed by €");
 
@@ -69,7 +69,6 @@ public class ManageClaimsSteps {
                 System.out.println("Data not post fixed by €");
             }
         }
-
 
 
     }
@@ -127,10 +126,9 @@ public class ManageClaimsSteps {
     public void appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details() {
         String treatmentStatus = claimPage.verifyTreatmentStatus();
 
-        if (treatmentStatus.length()>0) {
+        if (treatmentStatus.length() > 0) {
             System.out.println("Treatment status appeared as per requirement");
-        }
-        else {
+        } else {
             System.out.println("Treatment status does not appear ");
         }
     }
@@ -224,6 +222,17 @@ public class ManageClaimsSteps {
         }
     }
 
+    //Add claim for any client
+
+    @When("User enters client details")
+    public void user_enters_client_details() {
+        claimPage.selectClient();
+    }
+
+    @When("User enters policy details")
+    public void user_enters_policy_details() {
+        claimPage.selectPolicyInfo();
+    }
 
 
 }

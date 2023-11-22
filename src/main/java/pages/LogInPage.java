@@ -1,16 +1,20 @@
 package pages;
 
+import actions.LoginActions;
+import dataModels.LogIn;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class LogInPage {
+public class LogInPage extends LoginActions {
     private WebDriver driver;
 
     //1.Create a class constructor
     public LogInPage(WebDriver driver) {
         this.driver = driver;
     }
+
+    LogIn login;
 
     //Login Form Elements
     private By emailField = By.xpath("//input[@id='UserName']");

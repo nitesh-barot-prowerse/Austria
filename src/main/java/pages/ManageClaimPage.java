@@ -79,6 +79,15 @@ public class ManageClaimPage {
     private By claimAdvisedToDate=By.xpath("//div[@id='search']/div[8]/div/span/span/input");
 
     private By searchButton=By.cssSelector("button[id='SearchGrid']");
+    //Add claim for policy
+
+    private By clientIdDropDown=By.xpath("//div[@class='ibox-content']/div[6]/div[1]/div[1]/div[2]/div/div/div/div/span/span/input");
+
+    private By optionOfClientIdDD=By.xpath("//ul[@id='ClientId_listbox']/li/table/tbody/tr");
+
+    private By policyIdDropDown=By.xpath("//div[@id='divPetInformation']/div[2]/div/div[1]/div/div/span/span/span[2]");
+
+    private By optionOfPolicyIdDD=By.xpath("//ul[@id='PolicyId_listbox']/li/table/tbody/tr");
 
 
 
@@ -395,6 +404,38 @@ public class ManageClaimPage {
         driver.findElement(claimAdvisedToDate).sendKeys("24.06.2024");
         try {
             Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    //Add claim for any client
+
+    public void selectClient(){
+        driver.findElement(clientIdDropDown).sendKeys("PATE-0008");
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionOfClientIdDD).click();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void selectPolicyInfo(){
+        driver.findElement(policyIdDropDown).click();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionOfPolicyIdDD).click();
+        try {
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

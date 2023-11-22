@@ -58,3 +58,11 @@ Feature: Verify Manage Claim Module Features
 #    And User clicks on search button on manage claim page
 #    Then Details of claim on manage claim page filters upon value of from and to date value of claim first advised on manage claim page
 
+  @Sanity
+  Scenario: Add claim for any client
+    When User clicks on add claim button
+    And User enters client details
+    And User enters policy details
+    And User enters claim details
+    And User clicks on save button
+

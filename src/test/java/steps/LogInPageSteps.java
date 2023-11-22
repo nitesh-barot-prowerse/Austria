@@ -18,15 +18,17 @@ public class LogInPageSteps {
     @Given("User is one the website login page")
     public void user_is_one_the_website_login_page() {
         Log.info("User Opens US-UK-2 Website");
-        try {
-            ScreenRecorderUtil.startRecord("main");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            ScreenRecorderUtil.startRecord("main");
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
 
         String url = main.verifyUrl();
         System.out.println(url);
     }
+
+
 
     @When("User enters username {string} and password {string} and click signIn button")
     public void user_enters_username_and_password_and_click_sign_in_button(String string, String string2) {

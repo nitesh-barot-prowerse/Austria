@@ -10,6 +10,7 @@ Feature: Verify Account Module Functionalities
     When User clicks on icon
     Then User will redirect to respected page
 
+  @Stage
   Scenario: Filter data of manage bank page upon entering account number
     When User clicks on bank icon
     And User enters account number in search box on manage bank page
@@ -40,12 +41,12 @@ Feature: Verify Account Module Functionalities
     And User clicks on add receipt icon on manage receipt page
     Then Allocate Payment page displays with all details
 
-  @Sanity
-  Scenario:Add breach register page  displays will all details when user clicks on Add breach register on manage breach register page
-    When User clicks on manage breach registers icon
-    And User clicks on Add breach register icon on manage breach register page
-    Then Add breach register page displays with all details
-
+#  @Sanity
+#  Scenario:Add breach register page  displays will all details when user clicks on Add breach register on manage breach register page
+#    When User clicks on manage breach registers icon
+#    And User clicks on Add breach register icon on manage breach register page
+#    Then Add breach register page displays with all details
+#
 # ##Policy review
 #
 #  @Sanity

@@ -1,5 +1,9 @@
 package pages;
 
+import actions.ClientActions;
+import actions.EditClientActions;
+import dataModels.Client;
+import dataModels.EditClient;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,12 +14,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class ClientPage {
+public class ClientPage extends ClientActions {
     private WebDriver driver;
 
     public ClientPage(WebDriver driver) {
         this.driver = driver;
     }
+
+    Client client;
+
+    EditClient editClient;
+
+    EditClientActions editClientActions=new EditClientActions();
 
     //Elements
     private By clientIcon = By.cssSelector("ul[id='side-menu']>li:nth-child(3)");
@@ -248,6 +258,188 @@ public class ClientPage {
     private By okButton=By.cssSelector("button[class='swal-button swal-button--confirm']");
 
 
+
+    //Add client in the system  using UI
+
+    public void clickOnAddClientButton() {
+        driver.findElement(addClientButton).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void enterUserDetails() {
+        String clientType = driver.findElement(By.xpath("//div[@class='ibox-content']/div[2]/div/div/div")).getText();
+        String clientRadio[] = clientType.split(" ");
+        if (clientRadio[0].equals("Individual")) {
+            driver.findElement(genderDropDown).click();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            driver.findElement(genderValue).click();
+
+        }
+    }
+    public void clientDetails(String datasetFile) throws Exception {
+        client = getClientDetails(datasetFile);
+        setFirstName(client.getFirstName());
+        setLastName(client.getLastName());
+        setBirthDate(client.getBirthDate());
+        setAddress1(client.getAddressCode());
+        setEmail(client.getEmail());
+        setContactNumber(client.getPrimaryContactNumber());
+
+
+    }
+
+    public void setFirstName(String firstname){
+
+        driver.findElement(firstName).sendKeys(firstname);
+
+
+    }
+    public void setLastName(String lastname){
+        driver.findElement(lastName).sendKeys(lastname);
+
+    }
+    public void setBirthDate(String dob){
+        driver.findElement(birthDate).sendKeys(dob);
+
+    }
+    public void setAddress1(String postcode){
+        driver.findElement(Address).sendKeys(postcode);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(postCodeOfAddress).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    public void setEmail(String Email){
+        driver.findElement(emailId).sendKeys(Email);
+
+    }
+    public void setContactNumber(String contactNumber){
+        driver.findElement(primaryContact).sendKeys(contactNumber);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void clickOnCreateClientButton() {
+        driver.findElement(createButton).click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String verifyCreatedClient() {
+        return driver.findElement(displayMessageOfViewClientPage).getText();
+    }
+
+
+    //Edit client test case
+
+    public void selectEditClientDetails() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(settingDropDown)).perform();
+        driver.findElement(editClientOptionsFromDD).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public void editClientData(String datasetFile) throws Exception {
+        editClient =editClientActions.getEditClientDetails(datasetFile) ;
+
+        driver.findElement(clientFirstName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.findElement(clientFirstName).sendKeys(editClient.getFirstName());
+        driver.findElement(clientLastName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientLastName).sendKeys(editClient.getLastName());
+        driver.findElement(clientBirthDate).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientBirthDate).sendKeys(editClient.getBirthDate());
+
+        driver.findElement(clientPostAddressCode).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientPostAddressCode).sendKeys(editClient.getAddressCode());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientAddressFromDD).click();
+
+        driver.findElement(clientEmail).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientEmail).sendKeys(editClient.getEmail());
+
+        driver.findElement(clientContact).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientContact).sendKeys(editClient.getPrimaryContactNumber());
+        driver.findElement(saveButton).click();
+
+
+    }
+
+    public String verifyUpdatedClient() {
+        return driver.findElement(By.cssSelector("ul[class='iconlist']>li")).getText();
+    }
+
+
+
     public String verifyClientManage() {
         driver.findElement(clientIcon).click();
         try {
@@ -268,6 +460,8 @@ public class ClientPage {
         return array;
 
     }
+
+    //Verify client based on client code
 
     public void enterCodeDetails() {
         driver.findElement(searchBox).sendKeys("RAOA-0001");
@@ -297,6 +491,8 @@ public class ClientPage {
         }
         return clientCode;
     }
+
+    //Filter client based on option of client status drop down
 
     public void selectClientStatus() {
         driver.findElement(statusDropDown).click();
@@ -368,7 +564,7 @@ public class ClientPage {
             cEle.click();
 
             try {
-                Thread.sleep(3000);
+                Thread.sleep(4000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -845,69 +1041,7 @@ public class ClientPage {
     }
 
 
-    //Add client scenario
 
-    public void clickOnAddClientButton() {
-        driver.findElement(addClientButton).click();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public void enterUserDetails() {
-        String clientType = driver.findElement(By.xpath("//div[@class='ibox-content']/div[2]/div/div/div")).getText();
-        String clientRadio[] = clientType.split(" ");
-        if (clientRadio[0].equals("Individual")) {
-            driver.findElement(genderDropDown).click();
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(genderValue).click();
-            driver.findElement(firstName).sendKeys("Deep");
-            driver.findElement(lastName).sendKeys("Rao");
-            driver.findElement(birthDate).sendKeys("19.06.1987");
-            driver.findElement(Address).sendKeys("2126");
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            driver.findElement(postCodeOfAddress).click();
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            //driver.findElement(streetAddress).sendKeys(Constant.getSaltString());
-            //Alert simpleAlert = driver.switchTo().alert();
-            //simpleAlert.accept();
-            driver.findElement(emailId).sendKeys(Constant.getSaltString() + "@gmail.com");
-            driver.findElement(primaryContact).sendKeys(Constant.getAlphaNumericString());
-
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
-
-    public void clickOnCreateClientButton() {
-        driver.findElement(createButton).click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public String verifyCreatedClient() {
-        return driver.findElement(displayMessageOfViewClientPage).getText();
-    }
 
     //Add contact details of client
 
@@ -1081,85 +1215,6 @@ public class ClientPage {
         return driver.findElement(taskDetails).getText();
     }
 
-    //Edit client test case
-
-    public void selectEditClientDetails() {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(settingDropDown)).perform();
-        driver.findElement(editClientOptionsFromDD).click();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-
-    }
-
-    public void editClientData() {
-        driver.findElement(clientFirstName).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientFirstName).sendKeys("Nitesh");
-        driver.findElement(clientLastName).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientLastName).sendKeys("Barot");
-        driver.findElement(clientBirthDate).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientBirthDate).sendKeys("12.09.1980");
-
-        driver.findElement(clientPostAddressCode).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientPostAddressCode).sendKeys("RM8 2TE");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientAddressFromDD).click();
-
-        driver.findElement(clientEmail).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientEmail).sendKeys("nik@gmail.com");
-
-        driver.findElement(clientContact).clear();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElement(clientContact).sendKeys("07459170022");
-        driver.findElement(saveButton).click();
-    }
-
-    public String verifyUpdatedClient() {
-        return driver.findElement(By.cssSelector("ul[class='iconlist']>li")).getText();
-    }
 
     //Add primary contact for client on production
 
