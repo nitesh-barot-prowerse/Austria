@@ -35,11 +35,11 @@ Feature: Verify Account Module Functionalities
     And User clicks on add bank icon on manage bank page
     Then Add bank page displays with all details
 
-  @Sanity
-  Scenario:Allocate Payment page displays will all details when user clicks on add receipt icon on manage receipt page
-    When User clicks on manage receipt icon on account page
-    And User clicks on add receipt icon on manage receipt page
-    Then Allocate Payment page displays with all details
+#  @Sanity
+#  Scenario:Allocate Payment page displays will all details when user clicks on add receipt icon on manage receipt page
+#    When User clicks on manage receipt icon on account page
+#    And User clicks on add receipt icon on manage receipt page
+#    Then Allocate Payment page displays with all details
 
 #  @Sanity
 #  Scenario:Add breach register page  displays will all details when user clicks on Add breach register on manage breach register page

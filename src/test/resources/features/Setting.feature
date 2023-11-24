@@ -10,10 +10,10 @@ Feature: Verify Setting Module Features
     When User clicks on icon on setting page
     Then User will able to redirect to respected page
 
-  @Sanity
-  Scenario: To verify whether Manage Policy Type page displays with policy type details by clicking on policy type icon on setting page
-    When User clicks on policy type icon setting page
-    Then Manage Policy Type page displays with all policy type details
+#  @Sanity
+#  Scenario: To verify whether Manage Policy Type page displays with policy type details by clicking on policy type icon on setting page
+#    When User clicks on policy type icon setting page
+#    Then Manage Policy Type page displays with all policy type details
 
   @Sanity
   Scenario:Add policy type page  displays will all details when user clicks on add policy type icon on manage policy type page

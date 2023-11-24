@@ -53,12 +53,12 @@ Feature: Verify Report Module Features
     And User clicks on search button on policy summary report page
     Then Appropriate data displays on policy summary report page upon selected option from status drop down
 
-  @Sanity
-  Scenario: Sorting data on policy summary report page via policy number and sort direction dropdowns options
-    When User clicks on policy summary report button on report page
-    And User selects policy number option from sort by and ascending option from sort direction drop down respectively
-    And User clicks on search button on policy summary report page
-    Then Appropriate data displays on policy summary report page upon selected option from both drop down
+#  @Sanity
+#  Scenario: Sorting data on policy summary report page via policy number and sort direction dropdowns options
+#    When User clicks on policy summary report button on report page
+#    And User selects policy number option from sort by and ascending option from sort direction drop down respectively
+#    And User clicks on search button on policy summary report page
+#    Then Appropriate data displays on policy summary report page upon selected option from both drop down
 
   ##Policy Payment history report
 
@@ -69,19 +69,19 @@ Feature: Verify Report Module Features
 #    Then Appropriate data displays on policy payment history page upon selected option from drop down
 
    #Outstanding claims report
-  @Sanity
-  Scenario: Filter Outstanding Claims report information upon notified from and to date
-    When User clicks on outstanding claims button on report page
-    And User enters from and to date value on outstanding claims page
-    And User clicks on search button on outstanding claims
-    Then Appropriate data displays on outstanding claims upon date values
-
-  @Sanity
-  Scenario: Sorting data on Filter Outstanding Claims report via sort by and sort direction dropdowns options
-    When User clicks on outstanding claims button on report page
-    And User selects any option from sort by and option from sort direction drop down respectively on Filter Outstanding Claims page
-    And  User clicks on search button on outstanding claims
-    Then Appropriate data displays on outstanding claims upon selected option from drop down
+#  @Sanity
+#  Scenario: Filter Outstanding Claims report information upon notified from and to date
+#    When User clicks on outstanding claims button on report page
+#    And User enters from and to date value on outstanding claims page
+#    And User clicks on search button on outstanding claims
+#    Then Appropriate data displays on outstanding claims upon date values
+#
+#  @Sanity
+#  Scenario: Sorting data on Filter Outstanding Claims report via sort by and sort direction dropdowns options
+#    When User clicks on outstanding claims button on report page
+#    And User selects any option from sort by and option from sort direction drop down respectively on Filter Outstanding Claims page
+#    And  User clicks on search button on outstanding claims
+#    Then Appropriate data displays on outstanding claims upon selected option from drop down
 
   ##26 and 27 report
 

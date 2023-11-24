@@ -6,47 +6,47 @@ Feature: Verify Client Module Features
     And User selects language option
     When User clicks on client icon on left tool bar
 
-#  @Sanity
-#  Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
-#    Then Manage client page displays with list of clients
+  @Sanity
+  Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
+    Then Manage client page displays with list of clients
 
 #  @Stage
-#  Scenario: To add and verify new client details inside client client module
+#  Scenario: To add and verify new client details inside  client module
 #    When User clicks on add client icon on manage client page
 #    And User enters all mandatory details on add client page
 #    And User clicks on create button on add client page
 #    Then View client page appears with the details of currently added client
 
-#  Scenario Outline: Enter new client
-#    When User clicks on add client icon on manage client page
-#    And User enters client details from "<fileName>"
-#    And User clicks on create button on add client page
-#    Then View client page appears with the details of currently added client
-#    Examples:
-#      | fileName           |
-#      | client/client.json |
-
-
-  Scenario Outline: To verify edit client functionality for existing client
-    When User clicks on client code on manage client page
-    And User selects edit client sections from setting dropdown besides the active text on view client page
-    And User enters all details of client on edit client window from  from "<fileName>"
-    Then Updated details can view on view client page
+  Scenario Outline: Enter new client
+    When User clicks on add client icon on manage client page
+    And User enters client details from "<fileName>"
+    And User clicks on create button on add client page
+    Then View client page appears with the details of currently added client
     Examples:
       | fileName           |
-      | client/editclient.json |
+      | client/client.json |
+
+
+#  Scenario Outline: To verify edit client functionality for existing client
+#    When User clicks on client code on manage client page
+#    And User selects edit client sections from setting dropdown besides the active text on view client page
+#    And User enters all details of client on edit client window from  from "<fileName>"
+#    Then Updated details can view on view client page
+#    Examples:
+#      | fileName           |
+#      | client/editclient.json |
 
 #  Scenario: Appropriate client data will display upon entering  code in search box
 #    When User enters code number inside search box on manage client page
 #    And User clicks on search button manage client page
 #    Then Appropriate client information displays inside table on manage client page
 
-#  @Sanity
-#  Scenario: Filter list of client based on active status dropdown option on manage client page
-#    When User selects appropriate option from Active dropdown on manage client page
-#    And User clicks on search button
-#    And User clicks on client code on manage client page
-#    Then Client status displays on view client page
+  @Sanity
+  Scenario: Filter list of client based on active status dropdown option on manage client page
+    When User selects appropriate option from Active dropdown on manage client page
+    And User clicks on search button
+    And User clicks on client code on manage client page
+    Then Client status displays on view client page
 #
 #  @Sanity
 #  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
@@ -54,10 +54,10 @@ Feature: Verify Client Module Features
 #    And User clicks on add button on view client page
 #    Then Add quote page displays with same client code
 
-#  @Sanity
-#  Scenario: view client page should displays with all details for each client code link on manage client page
-#    When User clicks on client code link  on manage client page
-#    Then View client page displays with all details
+  @Sanity
+  Scenario: view client page should displays with all details for each client code link on manage client page
+    When User clicks on client code link  on manage client page
+    Then View client page displays with all details
 #
 #  @Sanity
 #  Scenario:Edit client page should display in editable format by clicking on edit client icon on cog dropdown menu on view client page
